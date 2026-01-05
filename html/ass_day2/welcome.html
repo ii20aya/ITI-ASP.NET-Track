@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome</title>
+
+    <!-- Redirect after 5 seconds -->
+    <meta http-equiv="refresh" content="5;url=Home.html">
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            background-image: url("assets/images/welcome-bg.jpg");
+            background-size: 95%;
+            background-position: center;
+            background-repeat: no-repeat;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .overlay {
+            
+            background-color: rgba(0,0,0,0.7);
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        .skip {
+            position: absolute;
+            bottom: 20px;
+        }
+
+        .skip a {
+            color: #ffffff;
+            font-size: 18px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="overlay">
+
+    <h1>Welcome to My Website</h1>
+    <h2>Aya Abdelaziz</h2>
+
+    <div class="skip">
+        <a href="Home.html">Skip Intro</a>
+    </div>
+
+</div>
+
+</body>
+</html>
