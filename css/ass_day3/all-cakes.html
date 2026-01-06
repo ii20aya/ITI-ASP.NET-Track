@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>All Cakes - Bethany's Pie Shop</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* التنسيقات الخاصة بجدول هذه الصفحة فقط (عشان تكون طويلة وبروفيشنال) */
+        
+        .content {
+            width: 78%;
+            float: left;
+            padding-left: 20px;
+        }
+
+        .table-intro {
+            text-align: center;
+            font-size: 15px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .products-table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: rgba(255, 255, 255, 0.3); 
+        }
+
+        .products-table th {
+            border: 1px solid #333;
+            padding: 15px 10px;
+            text-align: left;
+            font-weight: bold;
+        }
+
+        .products-table td {
+            border: 1px solid #333;
+            padding: 25px 10px; /* زيادة الـ padding جعل الصفوف أطول وأشيك */
+            text-align: left;
+            vertical-align: middle; 
+            font-size: 14px;
+        }
+
+        .products-table img {
+            width: 120px; /* حجم متوسط ومناسب للطول الجديد */
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            border: 1px solid #ccc;
+        }
+
+        .products-table a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        .visited-link {
+            color: #8e44ad;
+            text-decoration: underline !important;
+        }
+
+        /* حركات بروفيشنال: تغيير لون الصف عند مرور الماوس */
+        .products-table tr:hover {
+            background-color: rgba(163, 137, 189, 0.15);
+            transition: 0.3s;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <img src="./images/pie.png" alt="logo-icon" class="nav-icon">
+        <a href="index.html">Home</a>
+        <a href="all-cakes.html">All Cakes</a>
+    </nav>
+
+    <div class="wrapper">
+        <aside class="sidebar">
+            <img src="./images/bethanylogo.png" alt="Logo" class="main-logo">
+            <div class="search-box">
+                <input type="text" placeholder="Search our store">
+            </div>
+        </aside>
+
+        <main class="content">
+            <p class="table-intro">Our delicious selection of pies for you to enjoy!</p>
+            
+            <table class="products-table">
+                <thead>
+                    <tr>
+                        <th>Image</th>
+                        <th>Pie name</th>
+                        <th>Description</th>
+                        <th>Price</th>
+                        <th>Details</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="./products/cheesecake.jpg" alt="Cheese cake"></td>
+                        <td>Cheese cake</td>
+                        <td>Plain cheese cake. Plain pleasure.</td>
+                        <td>$12.95</td>
+                        <td><a href="#">View details</a></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./products/applepie.jpg" alt="Apple pie"></td>
+                        <td>Apple pie</td>
+                        <td>Our famous apple pie</td>
+                        <td>$14.95</td>
+                        <td><a href="apple-pie.html" class="visited-link">View details</a></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./products/cranberrypiesmall.jpg" alt="Cranberry pie"></td>
+                        <td>Cranberry pie</td>
+                        <td>A Christmas favorite</td>
+                        <td>$18.95</td>
+                        <td><a href="#">View details</a></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./products/cherrypiesmall.jpg" alt="Cherry pie"></td>
+                        <td>Cherry pie</td>
+                        <td>A summer classic!</td>
+                        <td>$18.95</td>
+                        <td><a href="#">View details</a></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./products/blueberrycheesecakesmall.jpg" alt="Blueberry cheese cake"></td>
+                        <td>Blueberry cheese cake</td>
+                        <td>You'll love it!</td>
+                        <td>$17.95</td>
+                        <td><a href="#">View details</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+        
+        <div style="clear: both;"></div>
+    </div>
+
+</body>
+</html>

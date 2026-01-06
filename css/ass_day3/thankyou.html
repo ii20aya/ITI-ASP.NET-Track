@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>Thank You - Bethany's Pie Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      
+        .thank-you-box {
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+            border: 2px dashed #a389bd;
+            margin-top: 50px;
+        }
+        .thank-you-box h1 { color: #a389bd; }
+        .thank-you-box p { font-size: 18px; color: #333; }
+        #timer { font-weight: bold; color: #26d0ad; font-size: 22px; }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <img src="images/pie.png" alt="logo" class="nav-icon">
+        <a href="index.html">Home</a>
+        <a href="all-cakes.html">All Cakes</a>
+    </nav>
+
+    <div class="wrapper">
+        <aside class="sidebar">
+            <img src="images/bethanylogo.png" alt="Logo" class="main-logo">
+        </aside>
+
+        <main class="content">
+            <div class="thank-you-box">
+                <h1>شكراً لثقتك بنا! ❤️</h1>
+                <p>تم استلام طلبك بنجاح، فريق بيثاني يعمل الآن على تحضير ألذ فطيرة لك.</p>
+                <p>كلماتك الجميلة ودعمك هو سر نجاحنا دائماً.</p>
+                <br>
+                <p>سيتم تحويلك لصفحة المنتجات خلال <span id="timer">7</span> ثوانٍ...</p>
+            </div>
+        </main>
+
+        <div style="clear: both;"></div>
+    </div>
+
+    <script>
+        let timeLeft = 5;
+        let timerElement = document.getElementById('timer');
+
+        let countdown = setInterval(function() {
+            timeLeft--;
+            timerElement.textContent = timeLeft;
+            
+            if (timeLeft <= 0) {
+                clearInterval(countdown);
+                window.location.href = "all-cakes.html"; 
+            }
+        }, 1000);
+    </script>
+
+</body>
+</html>
