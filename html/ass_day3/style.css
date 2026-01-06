@@ -1,0 +1,155 @@
+/* --- 1. الإعدادات العامة (Shared Styles) --- */
+* {
+    box-sizing: border-box; /* لضمان حساب العرض والبادينج صح */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('images/pattern.png');
+    background-repeat: repeat;
+    color: #333;
+}
+
+/* --- 2. الهيكل الخارجي (Layout) --- */
+.navbar {
+    background-color: #a389bd;
+    padding: 10px 20px;
+    width: 100%;
+    overflow: hidden; /* عشان يلم العناصر اللي جواها float */
+}
+
+.nav-icon {
+    width: 25px;
+    float: left;
+    margin-right: 15px;
+}
+
+.navbar a {
+    float: left;
+    color: white;
+    text-decoration: none;
+    padding: 5px 15px;
+    font-size: 14px;
+}
+
+.wrapper, .main-container {
+    width: 95%;
+    max-width: 1200px;
+    margin: 20px auto;
+    overflow: hidden; /* Clearfix يدوي */
+}
+
+/* --- 3. القائمة الجانبية (Sidebar) --- */
+.sidebar {
+    width: 250px;
+    float: left;
+    text-align: center;
+    padding: 20px;
+}
+
+.main-logo {
+    width: 180px;
+    margin-bottom: 20px;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+
+/* --- 4. منطقة المحتوى (Content Area) --- */
+.content {
+    width: calc(100% - 250px); /* العرض الكلي ناقص السايد بار */
+    float: left;
+    padding: 20px;
+}
+
+/* --- 5. خاص بصفحة الهوم والفورم (Home & Form) --- */
+.hero-image {
+    width: 100%;
+    max-width: 600px;
+    border: 1px solid #ddd;
+    display: block;
+}
+
+.form-section {
+    margin-top: 30px;
+    clear: both;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+.input-group label {
+    width: 100px;
+    float: left;
+    color: #a389bd;
+    line-height: 35px;
+}
+
+.input-group input, .input-group select {
+    width: calc(100% - 100px);
+    float: left;
+    padding: 8px;
+    border: 1px solid #eee;
+}
+
+.submit-btn {
+    background-color: #26d0ad;
+    color: white;
+    border: none;
+    padding: 10px 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;
+    clear: both;
+}
+
+/* --- 6. خاص بصفحة التفاصيل (Details Page) --- */
+.detail-hero-image {
+    width: 100%;
+    max-width: 700px;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+}
+
+.price-tag {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+h2, .title {
+    color: #a389bd;
+    font-size: 24px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.highlight-text {
+    color: #26d0ad;
+    font-weight: 500;
+}
+
+.small-note {
+    font-size: 12px;
+    color: #777;
+    font-style: italic;
+}
+
+ol, ul {
+    padding-left: 30px;
+}
+
+.contact-info {
+    clear: both;
+    text-align: center;
+    padding: 40px 0;
+    font-weight: bold;
+}
