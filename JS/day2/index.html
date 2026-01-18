@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  
+
+
+<body>
+
+
+
+ 
+
+     
+</body>
+
+
+
+
+
+
+
+
+ <script>
+    //1
+    var count=0;
+    var x=window.prompt("enter a string");
+    console.log(x.split(""));
+    for(const element of x){
+        if(element == 'e'){
+            count++;
+        }
+
+    }
+    console.log(count);
+
+
+    
+
+
+
+    //2
+    var y = prompt("enter string to chech if it palindrome  or not?");
+    var check = prompt("case sensitivity or not?");
+    if(check.toLocaleLowerCase == "yes" ) {
+        y.toLocaleLowerCase;
+           
+    }
+
+    else if(check.toLocaleLowerCase == "no"){
+
+    }
+     console.log(y.split("").reverse().join(""));
+    if((y.split("").reverse().join("")) == y){
+        console.log("string is palindrome");
+    }
+    else{
+        console.log("string is NOT palindrome");
+    }
+
+
+
+
+
+
+    //3
+   var num1=prompt("enter num 1 ;")
+   var num2=prompt("enter num 2 ;")
+   var num3=prompt("enter num 3 ;")
+
+   document.write(`<br>sum of 3 values is:  ${num1} + ${num2} + ${num3} = ` + (parseFloat(num1)+parseFloat(num2)+parseFloat(num3)))
+   document.write(`<br>Mulitplication of 3 values =  ${num1} * ${num2} * ${num3} = ` + (parseFloat(num1)*parseFloat(num2)*parseFloat(num3)))
+   document.write(`<br>Division of 3 values is =   ${num1} / ${num2} / ${num3} = ` + (parseFloat(num1)/parseFloat(num2)/parseFloat(num3)))
+   
+   document.write("<hr>");
+   
+
+   //4
+   var arr=[]
+   for(var i=0 ; i<= 4; i++){
+    arr[i]=prompt("Enter 5 values");
+   }
+document.write("<br> <br> u have entered the values of :  " +arr)
+arr.sort();
+document.write("<br> <br> ur values after being sored  DEC:  " +arr)
+arr.reverse();
+document.write("<br> <br> ur values after being sored   ASC:  " +arr)
+
+
+ document.write("<hr>");
+
+
+
+//5
+
+var  radius = prompt("What is The Value of circular radius?")
+parseFloat(radius);
+document.write(`Total area is : `+ parseFloat(radius)*parseFloat(radius)*Math.PI)
+
+ document.write("<hr>");
+
+
+
+
+ //6
+
+var  root = prompt("What is The Value u want to CALC its Square root?")
+parseFloat(root);
+document.write(`Square root is : `+ Math.sqrt(root))
+
+ document.write("<hr>");
+ 
+ 
+ 
+ 
+ //7
+
+var  co = prompt("What is The Value u want to CALC its cos value?")
+parseFloat(co);
+document.write(`cos ${co} is : `+ Math.cos(co))
+
+ document.write("<hr>");
+
+
+
+ 
+   </script>
+
+</html>
+
+
+  
+
+
+
+
+
