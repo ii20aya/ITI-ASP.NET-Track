@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Modern Data Form</title>
+    <style>
+        /* ستايل عصري ونظيف */
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background: #f0f2f5; 
+            display: flex; 
+            flex-direction: column;
+            align-items: center; 
+            padding: 40px; 
+        }
+
+        .form-box { 
+            background: white; 
+            padding: 30px; 
+            border-radius: 20px; 
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05); 
+            max-width: 450px; 
+            width: 100%;
+            text-align: center;
+        }
+
+        h2 { color: #444; margin-bottom: 20px; }
+
+        input { 
+            width: 100%; 
+            padding: 12px; 
+            margin: 10px 0; 
+            border: 1px solid #e1e1e1; 
+            border-radius: 10px; 
+            box-sizing: border-box; /* عشان الـ padding ميبوظش العرض */
+            transition: 0.3s;
+        }
+
+        input:focus { border-color: #6c5ce7; outline: none; box-shadow: 0 0 5px rgba(108, 92, 231, 0.2); }
+
+        button#add { 
+            background: #6c5ce7; 
+            color: white; 
+            border: none; 
+            padding: 12px 25px; 
+            border-radius: 10px; 
+            cursor: pointer; 
+            width: 100%; 
+            font-size: 16px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        button#add:hover { background: #5b4cc4; }
+
+        table { 
+            width: 100%; 
+            max-width: 700px;
+            margin-top: 40px; 
+            border-collapse: collapse; 
+            background: white; 
+            border-radius: 15px; 
+            overflow: hidden; 
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05); 
+        }
+
+        th { background: #6c5ce7; color: white; padding: 15px; }
+        td { padding: 15px; text-align: center; border-bottom: 1px solid #f1f1f1; color: #555; }
+        tr:last-child td { border-bottom: none; }
+    </style>
+</head>
+<body>
+
+    <div class="form-box">
+        <h2>✨ Add Member</h2>
+        <input type="text" id="name" placeholder="Full Name">
+        <input type="text" id="age" placeholder="Age">
+        <input type="text" id="email" placeholder="Email (gmail or yahoo)">
+        <button id="add">Add to List</button>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+            </tbody>
+    </table>
+
+    <script>
+        // الكود بتاعك مع تصليح الـ IDs والتأكد من الربط
+        var nameInput = document.getElementById("name");
+        var ageInput = document.getElementById("age");
+        var emailInput = document.getElementById("email");
+        var addBtn = document.getElementById("add");
+        var tableBody = document.getElementById("tableBody");
+
+        addBtn.addEventListener("click", function () {
+            var name = nameInput.value.trim();
+            var age = ageInput.value.trim();
+            var email = emailInput.value.trim();
+
+            // 1. التأكد إن الخانات مش فاضية
+            if (name === "" || age === "" || email === "") {
+                alert("Please fill all fields!");
+                return;
+            }
+
+            // 2. الاسم حروف بس
+            if (!/^[a-zA-Z\s]+$/.test(name)) {
+                alert("Name must contain letters only!");
+                return;
+            }
+
+            // 3. السن رقم موجب
+            if (isNaN(age) || age <= 0) {
+                alert("Age must be a positive number!");
+                return;
+            }
+
+            // 4. الإيميل (gmail أو yahoo)
+            var emailPattern = /^[a-zA-Z0-9._-]+@(gmail|yahoo)\.com$/;
+            if (!emailPattern.test(email)) {
+                alert("Invalid email! (Must be @gmail.com or @yahoo.com)");
+                return;
+            }
+
+            // إنشاء الصف الجديد
+            var tr = document.createElement("tr");
+            tr.innerHTML = `
+                <td>${name}</td>
+                <td>${age}</td>
+                <td>${email}</td>
+            `;
+
+            tableBody.appendChild(tr);
+
+            // مسح البيانات بعد الإضافة
+            nameInput.value = "";
+            ageInput.value = "";
+            emailInput.value = "";
+        });
+    </script>
+</body>
+</html>
