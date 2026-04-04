@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aya Aziz</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <style>
+    
+    body { background-color: #f5f5dc; } 
+    .custom-navbar { background-color: #1b4332; } 
+    .btn-custom { background-color: #2d6a4f; color: white; border: none; }
+    .btn-custom:hover { background-color: #1b4332; color: white; }
+    .profile-img { width: 100px; height: 100px; object-fit: cover; }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark custom-navbar fixed-top shadow">
+  <div class="container">
+    <a class="navbar-brand" href="#">Aya Social</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Friends</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container mt-5 pt-5">
+  <div class="row">
+    
+    <div class="col-12 col-md-2 col-lg-3 mb-3">
+      <div class="card shadow-sm text-center p-3 border-0">
+        <h6 class="text-secondary">My Profile</h6>
+        <img src="me.jpg" class="rounded-circle profile-img mx-auto mb-2 d-none d-md-block" alt="Aya">
+        <p class="fw-bold mb-0">Aya Aziz</p>
+        <hr>
+        <div class="text-start small">
+          <p><i class="fa fa-university me-2 text-success"></i>Graduated</p>
+          <p><i class="fa fa-map-marker me-2 text-success"></i>Cairo, Egypt</p>
+          <p><i class="fa fa-birthday-cake me-2 text-success"></i>April 7, 2003</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-8 col-lg-7 mb-3">
+      <div class="card shadow-sm mb-3 border-0">
+        <div class="card-body">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="What's on your mind?">
+            <button class="btn btn-custom">Post</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card shadow-sm border-0">
+        <div class="card-body">
+          <div class="d-flex align-items-center mb-3">
+            <img src="https://www.w3schools.com/w3images/avatar4.png" class="rounded-circle me-2" style="width:40px">
+            <h6 class="mb-0">Aya Aziz</h6>
+          </div>
+          <p>Assignment Day 2 </p>
+          <img src="https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?auto=format&fit=crop&w=800&q=80" class="img-fluid rounded mb-3">
+          <div class="d-flex gap-2">
+            <button class="btn btn-sm btn-light border"><i class="fa fa-thumbs-up"></i> Like</button>
+            <button class="btn btn-sm btn-light border"><i class="fa fa-comment"></i> Comment</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="d-none d-sm-block col-sm-12 col-md-2 col-lg-2">
+      <div class="card shadow-sm text-center p-2 mb-3 border-0">
+        <p class="small fw-bold">Event</p>
+        <img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=200&q=80" class="img-fluid rounded mb-2">
+        <button class="btn btn-custom btn-sm w-100">Info</button>
+      </div>
+      
+      <div class="card shadow-sm text-center p-2 border-0">
+        <p class="small fw-bold">Request</p>
+        <img src="./me.jpg" class="rounded-circle mx-auto mb-2" style="width:50px">
+        <p class="small">Reem</p>
+        <button class="btn btn-custom btn-sm w-100">Accept</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

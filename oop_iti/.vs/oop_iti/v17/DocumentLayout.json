@@ -1,0 +1,227 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\backend\\oop_iti\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FF66201D-2878-4F0D-A67E-A119756120E4}|day06\\day06.csproj|d:\\backend\\oop_iti\\day06\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF66201D-2878-4F0D-A67E-A119756120E4}|day06\\day06.csproj|solutionrelative:day06\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF66201D-2878-4F0D-A67E-A119756120E4}|day06\\day06.csproj|d:\\backend\\oop_iti\\day06\\utility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF66201D-2878-4F0D-A67E-A119756120E4}|day06\\day06.csproj|solutionrelative:day06\\utility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF66201D-2878-4F0D-A67E-A119756120E4}|day06\\day06.csproj|d:\\backend\\oop_iti\\day06\\shapes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF66201D-2878-4F0D-A67E-A119756120E4}|day06\\day06.csproj|solutionrelative:day06\\shapes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF66201D-2878-4F0D-A67E-A119756120E4}|day06\\day06.csproj|d:\\backend\\oop_iti\\day06\\geoshape.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF66201D-2878-4F0D-A67E-A119756120E4}|day06\\day06.csproj|solutionrelative:day06\\geoshape.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF66201D-2878-4F0D-A67E-A119756120E4}|day06\\day06.csproj|d:\\backend\\oop_iti\\day06\\female.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF66201D-2878-4F0D-A67E-A119756120E4}|day06\\day06.csproj|solutionrelative:day06\\female.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF66201D-2878-4F0D-A67E-A119756120E4}|day06\\day06.csproj|d:\\backend\\oop_iti\\day06\\human.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF66201D-2878-4F0D-A67E-A119756120E4}|day06\\day06.csproj|solutionrelative:day06\\human.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF66201D-2878-4F0D-A67E-A119756120E4}|day06\\day06.csproj|d:\\backend\\oop_iti\\day06\\male.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF66201D-2878-4F0D-A67E-A119756120E4}|day06\\day06.csproj|solutionrelative:day06\\male.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39366BCB-B783-4084-BF0D-3560D861943B}|day05\\day05.csproj|d:\\backend\\oop_iti\\day05\\complex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39366BCB-B783-4084-BF0D-3560D861943B}|day05\\day05.csproj|solutionrelative:day05\\complex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39366BCB-B783-4084-BF0D-3560D861943B}|day05\\day05.csproj|d:\\backend\\oop_iti\\day05\\dynamicstack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39366BCB-B783-4084-BF0D-3560D861943B}|day05\\day05.csproj|solutionrelative:day05\\dynamicstack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39366BCB-B783-4084-BF0D-3560D861943B}|day05\\day05.csproj|d:\\backend\\oop_iti\\day05\\queue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39366BCB-B783-4084-BF0D-3560D861943B}|day05\\day05.csproj|solutionrelative:day05\\queue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 39,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Utility.cs",
+              "DocumentMoniker": "D:\\backend\\oop_iti\\day06\\Utility.cs",
+              "RelativeDocumentMoniker": "day06\\Utility.cs",
+              "ToolTip": "D:\\backend\\oop_iti\\day06\\Utility.cs",
+              "RelativeToolTip": "day06\\Utility.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwBEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-01T11:16:03.395Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "shapes.cs",
+              "DocumentMoniker": "D:\\backend\\oop_iti\\day06\\shapes.cs",
+              "RelativeDocumentMoniker": "day06\\shapes.cs",
+              "ToolTip": "D:\\backend\\oop_iti\\day06\\shapes.cs",
+              "RelativeToolTip": "day06\\shapes.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAADwvxAAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-01T11:14:11.761Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Geoshape.cs",
+              "DocumentMoniker": "D:\\backend\\oop_iti\\day06\\Geoshape.cs",
+              "RelativeDocumentMoniker": "day06\\Geoshape.cs",
+              "ToolTip": "D:\\backend\\oop_iti\\day06\\Geoshape.cs",
+              "RelativeToolTip": "day06\\Geoshape.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBoAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-01T10:44:10.724Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Female.cs",
+              "DocumentMoniker": "D:\\backend\\oop_iti\\day06\\Female.cs",
+              "RelativeDocumentMoniker": "day06\\Female.cs",
+              "ToolTip": "D:\\backend\\oop_iti\\day06\\Female.cs",
+              "RelativeToolTip": "day06\\Female.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-01T10:43:20.016Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\backend\\oop_iti\\day06\\Program.cs",
+              "RelativeDocumentMoniker": "day06\\Program.cs",
+              "ToolTip": "D:\\backend\\oop_iti\\day06\\Program.cs",
+              "RelativeToolTip": "day06\\Program.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAQwA8AAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-01T10:41:58.261Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Male.cs",
+              "DocumentMoniker": "D:\\backend\\oop_iti\\day06\\Male.cs",
+              "RelativeDocumentMoniker": "day06\\Male.cs",
+              "ToolTip": "D:\\backend\\oop_iti\\day06\\Male.cs",
+              "RelativeToolTip": "day06\\Male.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-01T10:43:01.911Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Human.cs",
+              "DocumentMoniker": "D:\\backend\\oop_iti\\day06\\Human.cs",
+              "RelativeDocumentMoniker": "day06\\Human.cs",
+              "ToolTip": "D:\\backend\\oop_iti\\day06\\Human.cs",
+              "RelativeToolTip": "day06\\Human.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-01T10:42:41.908Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Complex.cs",
+              "DocumentMoniker": "D:\\backend\\oop_iti\\day05\\Complex.cs",
+              "RelativeDocumentMoniker": "day05\\Complex.cs",
+              "ToolTip": "D:\\backend\\oop_iti\\day05\\Complex.cs",
+              "RelativeToolTip": "day05\\Complex.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAowEAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-26T10:04:55.528Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Queue.cs",
+              "DocumentMoniker": "D:\\backend\\oop_iti\\day05\\Queue.cs",
+              "RelativeDocumentMoniker": "day05\\Queue.cs",
+              "ToolTip": "D:\\backend\\oop_iti\\day05\\Queue.cs",
+              "RelativeToolTip": "day05\\Queue.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAYwDkAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-26T10:03:44.834Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DynamicStack.cs",
+              "DocumentMoniker": "D:\\backend\\oop_iti\\day05\\DynamicStack.cs",
+              "RelativeDocumentMoniker": "day05\\DynamicStack.cs",
+              "ToolTip": "D:\\backend\\oop_iti\\day05\\DynamicStack.cs",
+              "RelativeToolTip": "day05\\DynamicStack.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAYwBoAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-26T10:02:46.193Z"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 463,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 613,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{fbcae063-e2c0-4ab1-a516-996ea3dafb72}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

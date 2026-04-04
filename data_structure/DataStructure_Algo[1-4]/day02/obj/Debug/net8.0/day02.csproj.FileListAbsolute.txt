@@ -1,0 +1,14 @@
+D:\backend\DataStructure_Algo\day02\bin\Debug\net8.0\day02.exe
+D:\backend\DataStructure_Algo\day02\bin\Debug\net8.0\day02.deps.json
+D:\backend\DataStructure_Algo\day02\bin\Debug\net8.0\day02.runtimeconfig.json
+D:\backend\DataStructure_Algo\day02\bin\Debug\net8.0\day02.dll
+D:\backend\DataStructure_Algo\day02\bin\Debug\net8.0\day02.pdb
+D:\backend\DataStructure_Algo\day02\obj\Debug\net8.0\day02.GeneratedMSBuildEditorConfig.editorconfig
+D:\backend\DataStructure_Algo\day02\obj\Debug\net8.0\day02.AssemblyInfoInputs.cache
+D:\backend\DataStructure_Algo\day02\obj\Debug\net8.0\day02.AssemblyInfo.cs
+D:\backend\DataStructure_Algo\day02\obj\Debug\net8.0\day02.csproj.CoreCompileInputs.cache
+D:\backend\DataStructure_Algo\day02\obj\Debug\net8.0\day02.dll
+D:\backend\DataStructure_Algo\day02\obj\Debug\net8.0\refint\day02.dll
+D:\backend\DataStructure_Algo\day02\obj\Debug\net8.0\day02.pdb
+D:\backend\DataStructure_Algo\day02\obj\Debug\net8.0\day02.genruntimeconfig.cache
+D:\backend\DataStructure_Algo\day02\obj\Debug\net8.0\ref\day02.dll

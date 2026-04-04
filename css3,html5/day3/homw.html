@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    
+
+<ul class="navbar">
+  <li><a href="#" class="active"><i class="fa fa-home"></i></a></li>
+  
+  <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+  <li><a href="#"><i class="fa fa-search"></i></a></li>
+  
+</ul>
+
+
+<div class="gallery">
+  <div class="imgg">
+ <img src="./images/1 (1).jpg">
+  </div>
+
+  <div class="imgg">
+ <img src="./images/1 (2).jpg">
+  </div>
+
+  <div class="imgg">
+ <img src="./images/1.jpg">
+  </div>
+
+  <div class="imgg">
+ <img src="./images/2025-06-rebrand-dsktp-pre-blank.png">
+  </div>
+
+  <div class="imgg">
+ <img src="./images/stock-photo-pressed-powder-mascara-cream-lipstick-and-so-on-makeup-tools-d-rendering-d-illustration-2432161227.jpg">
+  </div>
+ 
+
+</div>
+
+
+<div class="cart" id="cart">
+  <img src="./images/me.jpg" id="avatar">
+  
+  <div class="content" id="cartcontent">
+    <span class="name">Aya Abdel-Aziz</span>
+    <span class="close-btn" id="closeBtn">&times;</span>
+  </div>
+</div>
+
+
+<script>
+
+const cart = document.getElementById('cart');
+const closeBtn = document.getElementById('closeBtn');
+const avatar = document.getElementById('avatar');
+
+
+closeBtn.onclick = function() {
+  cart.classList.add('closed');
+};
+
+avatar.onclick = function() {
+  cart.classList.remove('closed');
+};
+</script>
+</body>
+</html>

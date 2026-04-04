@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aya Abdulaziz </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Aya Abdulaziz Abdultawwab</h1> <p>FullStack Developer | .Net </p> </header>
+
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="./contact.html">Contact Me</a>
+    </nav>
+
+    <main class="container">
+        <div class="main-content">
+            <section id="about">
+                <h2>Summary</h2>
+                <p>I am a <mark>.NET Developer</mark> with experience in ASP.NET Core and Clean Architecture.</p>
+                <p>Current Date: <time datetime="2026-01-16">January 16, 2026</time></p> <div class="skills-box">
+                    <span>C# Mastery:</span> <meter value="0.9" min="0" max="1"></meter> <br>
+                    <span>Learning Progress:</span> <progress value="85" max="100"></progress> </div>
+            </section>
+
+            <article id="experience">
+                <h2>Work Experience</h2>
+                <ul>
+                    <li><strong>Net Developer </strong> (June 2025 - Sep 2025) </li>
+                    <li><strong>Rust Developer - Corelia</strong> (Oct 2024 - May 2025) </li>
+                </ul>
+            </article>
+
+            <section class="rating-area">
+                <h3>Rate my work:</h3>
+                <div id="star-container">
+                    <img src="./images/empty_star.png" class="star" data-fixed="0" onmouseover="hoverStar(this)" onmouseout="unhoverStar(this)" onclick="toggleStar(this)">
+                    <img src="./images/empty_star.png" class="star" data-fixed="0" onmouseover="hoverStar(this)" onmouseout="unhoverStar(this)" onclick="toggleStar(this)">
+                    <img src="./images/empty_star.png" class="star" data-fixed="0" onmouseover="hoverStar(this)" onmouseout="unhoverStar(this)" onclick="toggleStar(this)">
+                    <img src="./images/empty_star.png" class="star" data-fixed="0" onmouseover="hoverStar(this)" onmouseout="unhoverStar(this)" onclick="toggleStar(this)">
+                    <img src="./images/empty_star.png" class="star" data-fixed="0" onmouseover="hoverStar(this)" onmouseout="unhoverStar(this)" onclick="toggleStar(this)">
+                </div>
+            </section>
+
+           
+
+            <section>
+                <h3>Portfolio Preview</h3>
+                <video width="50%" controls poster="./images/Flower-Power-Fonts-12043995-1-1-580x387.jpg">
+                    <source src="./videos/sample.mp4" type="video/mp4">
+                    <source src="./videos/sample.ogv" type="video/ogv">
+                    Browser Dosen`t support this Extension
+                </video>
+            </section>
+        </div>
+
+        <aside>
+            <h3>Quick Links</h3>
+            <p>GitHub: <a href="https://github.com/ii20aya" target="_self"> @ii20aya</a></p>
+            <p>Location: Egypt </p>
+            <hr>
+            <h3 id="projects">Projects</h3>
+            <ol style="list-style:lower-roman;">
+                <li>ADAS System </li>
+                <li>SignalR RealTime Chat </li>
+                <li>E-commerce </li>
+            </ol>
+
+            <hr>
+            <div id="dropBox" ondrop="drop(event)" ondragover="allowDrop(event)"  style="width:100px; height:100px; border:2px dashed #f06292; background:#fff5f7;">
+ <img src="./images/me.jpg" id="dragImg" draggable="true" ondragstart="drag(event)" width="60%">
+            </div>
+           
+
+          <div id="dropBox" ondrop="drop(event)" ondragover="allowDrop(event)" 
+     style="width:100px; height:100px; border:2px dashed #f06292; background:#fff5f7;">
+</div>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Aya Abdulaziz </p>
+        
+    </footer>
+
+    <script>
+        var EMPTY = "./images/empty_star.png";
+        var FILLED = " ./images/Filled_star.png";
+
+        function hoverStar(_this) { _this.src = FILLED; }
+        function unhoverStar(_this) { 
+            if (_this.dataset.fixed === "0")
+             {_this.src = EMPTY; }}
+        function toggleStar(_this) {
+            
+            if (_this.dataset.fixed === "0") {
+                _this.dataset.fixed = "1";
+                _this.src = FILLED;
+            } else {
+                _this.dataset.fixed = "0";
+                _this.src = EMPTY;
+            }
+        }
+
+
+
+        function allowDrop(ev) {
+    ev.preventDefault(); }
+
+function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id); 
+}
+
+function drop(ev) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+    ev.target.appendChild(document.getElementById(data)); }
+        
+    </script>
+</body>
+</html>

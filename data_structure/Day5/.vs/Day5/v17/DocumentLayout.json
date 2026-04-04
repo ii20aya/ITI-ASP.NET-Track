@@ -1,0 +1,132 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\dann7\\OneDrive\\Desktop\\Day5\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{97C8BC5D-47E1-479E-A2E3-0B6D5127C9A0}|Day5.csproj|c:\\users\\dann7\\onedrive\\desktop\\day5\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97C8BC5D-47E1-479E-A2E3-0B6D5127C9A0}|Day5.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97C8BC5D-47E1-479E-A2E3-0B6D5127C9A0}|Day5.csproj|c:\\users\\dann7\\onedrive\\desktop\\day5\\dynamicarray.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97C8BC5D-47E1-479E-A2E3-0B6D5127C9A0}|Day5.csproj|solutionrelative:dynamicarray.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97C8BC5D-47E1-479E-A2E3-0B6D5127C9A0}|Day5.csproj|c:\\users\\dann7\\onedrive\\desktop\\day5\\myhashtable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97C8BC5D-47E1-479E-A2E3-0B6D5127C9A0}|Day5.csproj|solutionrelative:myhashtable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97C8BC5D-47E1-479E-A2E3-0B6D5127C9A0}|Day5.csproj|c:\\users\\dann7\\onedrive\\desktop\\day5\\tabledata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97C8BC5D-47E1-479E-A2E3-0B6D5127C9A0}|Day5.csproj|solutionrelative:tabledata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MyHashTable.cs",
+              "DocumentMoniker": "C:\\Users\\dann7\\OneDrive\\Desktop\\Day5\\MyHashTable.cs",
+              "RelativeDocumentMoniker": "MyHashTable.cs",
+              "ToolTip": "C:\\Users\\dann7\\OneDrive\\Desktop\\Day5\\MyHashTable.cs",
+              "RelativeToolTip": "MyHashTable.cs",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAwwGYAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T00:21:59.853Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TableData.cs",
+              "DocumentMoniker": "C:\\Users\\dann7\\OneDrive\\Desktop\\Day5\\TableData.cs",
+              "RelativeDocumentMoniker": "TableData.cs",
+              "ToolTip": "C:\\Users\\dann7\\OneDrive\\Desktop\\Day5\\TableData.cs",
+              "RelativeToolTip": "TableData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T00:18:59.487Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DynamicArray.cs",
+              "DocumentMoniker": "C:\\Users\\dann7\\OneDrive\\Desktop\\Day5\\DynamicArray.cs",
+              "RelativeDocumentMoniker": "DynamicArray.cs",
+              "ToolTip": "C:\\Users\\dann7\\OneDrive\\Desktop\\Day5\\DynamicArray.cs",
+              "RelativeToolTip": "DynamicArray.cs",
+              "ViewState": "AgIAAHoAAAAAAAAAAAAmwIYAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-12T23:48:27.555Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\dann7\\OneDrive\\Desktop\\Day5\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\dann7\\OneDrive\\Desktop\\Day5\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAQwDoAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-12T23:45:47.81Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 168,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 1284,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{fbcae063-e2c0-4ab1-a516-996ea3dafb72}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

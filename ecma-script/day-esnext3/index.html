@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<!--\
+<script>
+    //1- for in 
+    console.log("===================1")
+    arr=[1,2,3];
+
+
+    for (const key in arr) {
+    console.log(arr[key])        
+        
+    }
+
+     for (const key of arr) {
+    console.log(key)        
+        
+    }
+
+    arr.forEach(element => {
+         console.log(element)
+    });
+
+
+
+    //2
+    console.log("===================2")
+    var obj={
+ Std_name :"aya",
+ fac_name: "cs",
+ Uni_name :"BSU",
+ grad:"A+"
+    }
+
+
+
+    console.log(`${obj.Std_name} is a student in faculty of ${obj.fac_name} in university 
+${obj.Uni_name} and his final grad is ${obj.grad}.`)
+
+
+
+//3
+console.log("===================3")
+var str="hello"
+if(str.includes('e')) console.log("contain");
+else console.log("not contain");
+
+
+//5
+console.log("===================5-a")
+//a
+var num=[1,5,3,4,2,4,6,8,5];
+const oddNumbers = num.filter(num => num % 2 !== 0); 
+
+console.log(oddNumbers);
+
+
+
+//5
+console.log("===================5-b")
+//b
+num.forEach(num => 
+{
+  if (num % 2 == 0) 
+    console.log(num);
+  
+});
+
+
+console.log("===================5-c")
+//c
+ var flag =0 ;
+num.forEach(num => 
+{
+   
+  if (num > 5  && flag==0) {
+console.log(num); 
+flag=1;
+  }
+    
+  
+});
+
+//d
+console.log("===================5-d")
+
+var doubled = num.map(e => e * 2);
+
+console.log(doubled);
+
+
+
+
+//6
+
+
+console.log("===================6");
+
+(function(x, y) {
+    alert("self-invoking function");
+    console.log(x + y);
+})(1, 1);
+
+
+//7
+var fruits = ["apple", "strawberry", "banana", "orange", "mango"];
+var foundFruit = fruits.find(fruit => fruit === "banana");
+var allStrings = fruits.every(item => typeof item === "string");
+console.log(allStrings); // true
+
+const startsWithA = fruits.some(item => item.startsWith("a"));
+console.log(startsWithA); // true
+
+const filteredFruits = fruits.filter(
+  item => item.startsWith("b") || item.startsWith("s")
+);
+console.log(filteredFruits); // ["strawberry", "banana"]
+
+
+    </script>
+  
+
+
+    <script>
+a();
+b();
+function a() {
+ var myvar=2
+function b () {
+console.log(myvar);
+var myvar =1;
+}
+}
+    </script>
+      -->
+
+
+      <script>
+
+        //day 2 
+
+       console.log("===================1")
+        var arr=[1,2,3,4];
+        var arr2 = [...arr]
+        console.log(arr2);
+
+
+
+
+        console.log("===================  2")
+  var x=4;
+  var y=12;
+  console.log(`before swap : x= ${x}, and y = ${y}`);
+     [x , y] = [y , x];
+
+ console.log(`after swap : x= ${x}, and y = ${y}`);
+
+
+  console.log("===================  3 - using spread")
+
+var max1 = Math.max(...arr);
+var min1 = Math.min(...arr);
+console.log(`arr contain : ${arr}, "using spraed" and minumm val = ${min1} , and maximumm val = ${max1} `)
+
+ console.log("===================  3 - using rest par.")
+
+ var min2= (...x) =>{
+  return  Math.min(...x);
+ }
+ console.log( min2(1,2,56,78,90));
+
+  var max2= (...x) =>{
+  return  Math.max(...x);
+ }
+ console.log( max2(1,2,56,78,90));
+
+ console.log("===================  4")
+ 
+
+ var func = (...x)  =>{
+if (x.length > 2  || x.length <2){
+  throw new Error("more / less than 2 par.");
+  
+}
+
+ }
+
+ console.log(func(2,4)) ;
+
+
+
+
+ console.log("===================  5")
+var sum =0;
+  var add = (...x)  =>
+  {
+    for (const element of x) 
+    {
+        if ( typeof element !=="number" )
+        {
+
+  throw new Error("u not enterd a numbers");
+
+    }
+
+  else
+  {
+    sum+=element;
+    }
+  }}
+
+
+
+  
+  
+  
+
+
+add(2,3,4)
+console.log(sum);
+
+
+ console.log("===================  6")
+
+
+function rev1(...str){
+    return str.reverse();
+} 
+
+console.log(rev1("A","B","C","D"));
+
+var arrr =(...nums)=>{
+    return nums.reverse();
+} 
+
+console.log(arrr(1,2,3,4,5));
+
+
+ 
+
+
+
+
+
+
+
+
+      </script>
+
+</html>

@@ -1,0 +1,14 @@
+D:\backend\DataStructure_Algo\day01\bin\Debug\net8.0\day01.exe
+D:\backend\DataStructure_Algo\day01\bin\Debug\net8.0\day01.deps.json
+D:\backend\DataStructure_Algo\day01\bin\Debug\net8.0\day01.runtimeconfig.json
+D:\backend\DataStructure_Algo\day01\bin\Debug\net8.0\day01.dll
+D:\backend\DataStructure_Algo\day01\bin\Debug\net8.0\day01.pdb
+D:\backend\DataStructure_Algo\day01\obj\Debug\net8.0\day01.GeneratedMSBuildEditorConfig.editorconfig
+D:\backend\DataStructure_Algo\day01\obj\Debug\net8.0\day01.AssemblyInfoInputs.cache
+D:\backend\DataStructure_Algo\day01\obj\Debug\net8.0\day01.AssemblyInfo.cs
+D:\backend\DataStructure_Algo\day01\obj\Debug\net8.0\day01.csproj.CoreCompileInputs.cache
+D:\backend\DataStructure_Algo\day01\obj\Debug\net8.0\day01.dll
+D:\backend\DataStructure_Algo\day01\obj\Debug\net8.0\refint\day01.dll
+D:\backend\DataStructure_Algo\day01\obj\Debug\net8.0\day01.pdb
+D:\backend\DataStructure_Algo\day01\obj\Debug\net8.0\day01.genruntimeconfig.cache
+D:\backend\DataStructure_Algo\day01\obj\Debug\net8.0\ref\day01.dll

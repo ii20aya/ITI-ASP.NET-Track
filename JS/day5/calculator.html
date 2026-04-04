@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Calculator</title>
+    <style>
+        body { background: #e0e5ec; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        .calc-container { background: #e0e5ec; padding: 20px; border-radius: 30px; box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff; }
+        #Answer { width: 90%; height: 50px; border: none; background: #e0e5ec; box-shadow: inset 6px 6px 12px #bebebe, inset -6px -6px 12px #ffffff; border-radius: 10px; margin-bottom: 20px; text-align: right; padding: 10px; font-size: 1.2rem; color: #333; }
+        .grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; }
+        input[type="button"] { width: 60px; height: 60px; border-radius: 50%; border: none; background: #e0e5ec; box-shadow: 6px 6px 12px #bebebe, -6px -6px 12px #ffffff; cursor: pointer; font-weight: bold; transition: 0.2s; }
+        input[type="button"]:active { box-shadow: inset 4px 4px 8px #bebebe, inset -4px -4px 8px #ffffff; }
+        .equal { background: #4caf50 !important; color: white; border-radius: 10px !important; grid-column: span 3; width: auto !important; }
+        .clear { color: #f44336; }
+    </style>
+</head>
+<body>
+    <div class="calc-container">
+        <h3 style="text-align: center; color: #555;">JS Calc</h3>
+        <input id="Answer" type="text" readonly>
+        <div class="grid">
+            <input type="button" class="width clear" value="C">
+            <input type="button" class="width equal" value="=">
+            
+            <input type="button" class="width" value="1">
+            <input type="button" class="width" value="2">
+            <input type="button" class="width" value="3">
+            <input type="button" class="width" value="+">
+            
+            <input type="button" class="width" value="4">
+            <input type="button" class="width" value="5">
+            <input type="button" class="width" value="6">
+            <input type="button" class="width" value="-">
+            
+            <input type="button" class="width" value="7">
+            <input type="button" class="width" value="8">
+            <input type="button" class="width" value="9">
+            <input type="button" class="width" value="*">
+            
+            <input type="button" class="width" value="0">
+            <input type="button" class="width" value=".">
+            <input type="button" class="width" value="/">
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
