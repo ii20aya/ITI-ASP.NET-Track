@@ -1,0 +1,14 @@
+D:\backend\testing\testing2\bin\Debug\net9.0\testing2.exe
+D:\backend\testing\testing2\bin\Debug\net9.0\testing2.deps.json
+D:\backend\testing\testing2\bin\Debug\net9.0\testing2.runtimeconfig.json
+D:\backend\testing\testing2\bin\Debug\net9.0\testing2.dll
+D:\backend\testing\testing2\bin\Debug\net9.0\testing2.pdb
+D:\backend\testing\testing2\obj\Debug\net9.0\testing2.GeneratedMSBuildEditorConfig.editorconfig
+D:\backend\testing\testing2\obj\Debug\net9.0\testing2.AssemblyInfoInputs.cache
+D:\backend\testing\testing2\obj\Debug\net9.0\testing2.AssemblyInfo.cs
+D:\backend\testing\testing2\obj\Debug\net9.0\testing2.csproj.CoreCompileInputs.cache
+D:\backend\testing\testing2\obj\Debug\net9.0\testing2.dll
+D:\backend\testing\testing2\obj\Debug\net9.0\refint\testing2.dll
+D:\backend\testing\testing2\obj\Debug\net9.0\testing2.pdb
+D:\backend\testing\testing2\obj\Debug\net9.0\testing2.genruntimeconfig.cache
+D:\backend\testing\testing2\obj\Debug\net9.0\ref\testing2.dll

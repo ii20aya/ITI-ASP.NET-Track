@@ -1,0 +1,7 @@
+E:\work\ITI\Docker containers\Dotnet todo sample app\out\MyApp.exe
+E:\work\ITI\Docker containers\Dotnet todo sample app\out\appsettings.Development.json
+E:\work\ITI\Docker containers\Dotnet todo sample app\out\appsettings.json
+E:\work\ITI\Docker containers\Dotnet todo sample app\out\MyApp.dll
+E:\work\ITI\Docker containers\Dotnet todo sample app\out\MyApp.deps.json
+E:\work\ITI\Docker containers\Dotnet todo sample app\out\MyApp.runtimeconfig.json
+E:\work\ITI\Docker containers\Dotnet todo sample app\out\MyApp.pdb

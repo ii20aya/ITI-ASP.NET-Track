@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Day03</name>
+    </assembly>
+    <members>
+        <member name="T:Day03.Config">
+            <summary>
+            Configuration class implementing the Singleton design pattern.
+            Stores global application settings.
+            </summary>
+        </member>
+        <member name="T:Day03.Payroll">
+            <summary>
+            Handles employee salary calculations.
+            </summary>
+        </member>
+        <member name="M:Day03.Payroll.CalculateSalary(System.String,System.Int32,System.Decimal@,System.Decimal)">
+            <summary>
+            Calculates the total salary based on work hours and hourly rate.
+            </summary>
+            <param name="employeeName">Name of the employee.</param>
+            <param name="workHours">Number of hours worked.</param>
+            <param name="hourlyRate">Rate per hour (Default is 50).</param>
+            <param name="totalSalary">Output parameter to store the result.</param>
+        </member>
+        <member name="M:Day03.Day5Lab.Point2D.CompareTo(Day03.Day5Lab.Point2D)">
+            <summary>
+            Compares the current point with another point for sorting.
+            Priority: X-axis, then Y-axis if X is equal.
+            </summary>
+            <param name="other">The point to compare with.</param>
+            <returns>A value indicating the relative order.</returns>
+        </member>
+        <member name="M:Day03.Day5Lab.Point2D.ToString">
+            <summary>
+            Returns a string representation of the point.
+            </summary>
+        </member>
+        <member name="T:Day03.Student">
+            <summary>
+            Represents a student with a name and GPA.
+            </summary>
+        </member>
+        <member name="T:Day03.Grade">
+            <summary>
+            Represents a grade (class) containing multiple students.
+            Supports indexing by name or position.
+            </summary>
+        </member>
+        <member name="M:Day03.Utilities.Max``1(``0[])">
+            <summary>
+            Finds the maximum value among a set of provided values.
+            </summary>
+            <typeparam name="T">The type of elements, must implement IComparable.</typeparam>
+            <param name="values">A variable number of arguments to compare.</param>
+            <returns>The maximum value found.</returns>
+        </member>
+        <member name="M:Day03.Utilities.TryParse``1(System.String,``0@)">
+            <summary>
+            Attempts to parse a string into the specified type T.
+            </summary>
+            <typeparam name="T">The target type for conversion.</typeparam>
+            <param name="input">The string to parse.</param>
+            <param name="result">The parsed value if successful; otherwise, the default value of T.</param>
+            <returns>True if parsing succeeded; otherwise, false.</returns>
+        </member>
+    </members>
+</doc>

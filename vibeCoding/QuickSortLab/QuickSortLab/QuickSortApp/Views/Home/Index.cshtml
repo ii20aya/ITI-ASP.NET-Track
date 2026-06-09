@@ -1,0 +1,117 @@
+@model QuickSortApp.Models.SortViewModel
+@{
+    ViewData["Title"] = "QuickSort Visualizer";
+}
+
+<div class="hero-banner">
+    <div class="hero-content">
+        <h1><span class="accent">Quick</span>Sort Lab</h1>
+        <p class="subtitle">Powered by C# · .NET 8 · Built with GitHub Copilot</p>
+    </div>
+</div>
+
+<div class="container">
+    <div class="card">
+        <h2 class="card-title">Sort Your Numbers</h2>
+
+        <form asp-action="Sort" method="post">
+            <div class="form-group">
+                <label asp-for="InputNumbers">Enter numbers (comma-separated):</label>
+                <input asp-for="InputNumbers"
+                       class="form-control"
+                       placeholder="e.g. 64, 34, 25, 12, 22, 11, 90"
+                       autocomplete="off" />
+                <span asp-validation-for="InputNumbers" class="error-text"></span>
+            </div>
+
+            <div class="form-group toggle-row">
+                <label class="toggle-label">
+                    <input asp-for="UseIterative" type="checkbox" class="toggle-input" />
+                    <span class="toggle-switch"></span>
+                    Use Iterative QuickSort
+                    <span class="badge">Recommended for large arrays</span>
+                </label>
+            </div>
+
+            <div class="btn-row">
+                <button type="submit" class="btn btn-primary">
+                    ⚡ Sort Now
+                </button>
+                <button type="button" class="btn btn-outline" onclick="fillRandom()">
+                    🎲 Random
+                </button>
+                <button type="reset" class="btn btn-ghost">Clear</button>
+            </div>
+        </form>
+    </div>
+
+    @if (Model.Success)
+    {
+        <div class="result-card success">
+            <div class="result-header">
+                <span class="check">✅</span>
+                <h3>Sorted Successfully!</h3>
+            </div>
+            <div class="stat-row">
+                <div class="stat">
+                    <span class="stat-label">Elements</span>
+                    <span class="stat-value">@Model.InputCount</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-label">Time</span>
+                    <span class="stat-value">@Model.ElapsedMs.ToString("F4") ms</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-label">Algorithm</span>
+                    <span class="stat-value">@(Model.UseIterative ? "Iterative" : "Recursive")</span>
+                </div>
+            </div>
+            <div class="output-box">
+                <label>Sorted Result:</label>
+                <div class="output-text">@Model.SortedNumbers</div>
+            </div>
+        </div>
+    }
+
+    @if (!string.IsNullOrEmpty(Model.ErrorMessage))
+    {
+        <div class="result-card error">
+            <span>❌</span> @Model.ErrorMessage
+        </div>
+    }
+
+    <!-- Benchmark Section -->
+    <div class="card benchmark-card">
+        <h2 class="card-title">📊 Algorithm Benchmark</h2>
+        <p class="hint">Compare QuickSort vs MergeSort vs HeapSort vs Built-in Array.Sort</p>
+
+        <div class="bench-controls">
+            <label>Array size:</label>
+            <select id="benchSize">
+                <option value="1000">1,000</option>
+                <option value="10000" selected>10,000</option>
+                <option value="50000">50,000</option>
+                <option value="100000">100,000</option>
+            </select>
+            <button class="btn btn-primary" onclick="runBenchmark()">Run Benchmark</button>
+        </div>
+
+        <div id="benchResults" class="bench-results hidden">
+            <div class="loading-spinner" id="spinner">Running...</div>
+            <table id="benchTable" class="bench-table hidden">
+                <thead>
+                    <tr>
+                        <th>Algorithm</th>
+                        <th>Time (ms)</th>
+                        <th>Relative Speed</th>
+                    </tr>
+                </thead>
+                <tbody id="benchBody"></tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/js/app.js"></script>
+}

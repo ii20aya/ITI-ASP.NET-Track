@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "6iG2O4Eh9Gg=",
+  "success": true,
+  "projectFilePath": "D:\\backend\\testing\\testing\\testing.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\dann7\\.nuget\\packages\\microsoft.netframework.referenceassemblies\\1.0.3\\microsoft.netframework.referenceassemblies.1.0.3.nupkg.sha512",
+    "C:\\Users\\dann7\\.nuget\\packages\\microsoft.netframework.referenceassemblies.net47\\1.0.3\\microsoft.netframework.referenceassemblies.net47.1.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,51 @@
+﻿using System;
+using System.Diagnostics;
+using System.Linq;
+using QuickSortApp.Algorithms;
+
+namespace QuickSortApp.Algorithms
+{
+    /// <summary>
+    /// Benchmarks all sorting algorithms and returns structured results.
+    /// </summary>
+    public class BenchmarkService
+    {
+        private readonly Random _rng = new Random(42); // fixed seed for reproducibility
+
+        public BenchmarkResult Run(int size)
+        {
+            int[] source = Enumerable.Range(0, size)
+                                     .Select(_ => _rng.Next(1, 100_000))
+                                     .ToArray();
+
+            double Measure(Action<int[]> sorter)
+            {
+                int[] copy = (int[])source.Clone();
+                var sw = Stopwatch.StartNew();
+                sorter(copy);
+                sw.Stop();
+                return sw.Elapsed.TotalMilliseconds;
+            }
+
+            return new BenchmarkResult
+            {
+                ArraySize          = size,
+                QuickSortRecursive = Measure(QuickSort.RecursiveSort),
+                QuickSortIterative = Measure(QuickSort.IterativeSort),
+                MergeSort          = Measure(OtherSorters.MergeSort),
+                HeapSort           = Measure(OtherSorters.HeapSort),
+               // BuiltInSort        = Measure(OtherSorters.BuiltInSort),
+            };
+        }
+    }
+
+    public class BenchmarkResult
+    {
+        public int    ArraySize          { get; set; }
+        public double QuickSortRecursive { get; set; }
+        public double QuickSortIterative { get; set; }
+        public double MergeSort          { get; set; }
+        public double HeapSort           { get; set; }
+        public double BuiltInSort        { get; set; }
+    }
+}

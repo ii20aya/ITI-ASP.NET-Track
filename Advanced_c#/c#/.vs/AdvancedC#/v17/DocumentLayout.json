@@ -1,0 +1,602 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\backend\\Day01\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EFB2C2B7-163F-4CA9-B05D-29408A05EBFB}|Day05\\Day05.csproj|d:\\backend\\day01\\day05\\stringextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EFB2C2B7-163F-4CA9-B05D-29408A05EBFB}|Day05\\Day05.csproj|solutionrelative:day05\\stringextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFB2C2B7-163F-4CA9-B05D-29408A05EBFB}|Day05\\Day05.csproj|d:\\backend\\day01\\day05\\supplier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EFB2C2B7-163F-4CA9-B05D-29408A05EBFB}|Day05\\Day05.csproj|solutionrelative:day05\\supplier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFB2C2B7-163F-4CA9-B05D-29408A05EBFB}|Day05\\Day05.csproj|d:\\backend\\day01\\day05\\company.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EFB2C2B7-163F-4CA9-B05D-29408A05EBFB}|Day05\\Day05.csproj|solutionrelative:day05\\company.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFB2C2B7-163F-4CA9-B05D-29408A05EBFB}|Day05\\Day05.csproj|d:\\backend\\day01\\day05\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EFB2C2B7-163F-4CA9-B05D-29408A05EBFB}|Day05\\Day05.csproj|solutionrelative:day05\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFB2C2B7-163F-4CA9-B05D-29408A05EBFB}|Day05\\Day05.csproj|d:\\backend\\day01\\day05\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EFB2C2B7-163F-4CA9-B05D-29408A05EBFB}|Day05\\Day05.csproj|solutionrelative:day05\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB0D5D2E-7AF7-41B0-A57D-B1FAC9409211}|Day04\\Day04.csproj|d:\\backend\\day01\\day04\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB0D5D2E-7AF7-41B0-A57D-B1FAC9409211}|Day04\\Day04.csproj|solutionrelative:day04\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB0D5D2E-7AF7-41B0-A57D-B1FAC9409211}|Day04\\Day04.csproj|d:\\backend\\day01\\day04\\taskmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB0D5D2E-7AF7-41B0-A57D-B1FAC9409211}|Day04\\Day04.csproj|solutionrelative:day04\\taskmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB0D5D2E-7AF7-41B0-A57D-B1FAC9409211}|Day04\\Day04.csproj|d:\\backend\\day01\\day04\\taskitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB0D5D2E-7AF7-41B0-A57D-B1FAC9409211}|Day04\\Day04.csproj|solutionrelative:day04\\taskitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB0D5D2E-7AF7-41B0-A57D-B1FAC9409211}|Day04\\Day04.csproj|d:\\backend\\day01\\day04\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB0D5D2E-7AF7-41B0-A57D-B1FAC9409211}|Day04\\Day04.csproj|solutionrelative:day04\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB0D5D2E-7AF7-41B0-A57D-B1FAC9409211}|Day04\\Day04.csproj|d:\\backend\\day01\\day04\\studentgrades.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB0D5D2E-7AF7-41B0-A57D-B1FAC9409211}|Day04\\Day04.csproj|solutionrelative:day04\\studentgrades.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB0D5D2E-7AF7-41B0-A57D-B1FAC9409211}|Day04\\Day04.csproj|d:\\backend\\day01\\day04\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB0D5D2E-7AF7-41B0-A57D-B1FAC9409211}|Day04\\Day04.csproj|solutionrelative:day04\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{802D159B-8F56-4C3F-807E-A63828A60347}|Day03\\Day03.csproj|d:\\backend\\day01\\day03\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{802D159B-8F56-4C3F-807E-A63828A60347}|Day03\\Day03.csproj|solutionrelative:day03\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{802D159B-8F56-4C3F-807E-A63828A60347}|Day03\\Day03.csproj|d:\\backend\\day01\\day03\\song.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{802D159B-8F56-4C3F-807E-A63828A60347}|Day03\\Day03.csproj|solutionrelative:day03\\song.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{802D159B-8F56-4C3F-807E-A63828A60347}|Day03\\Day03.csproj|d:\\backend\\day01\\day03\\vehicle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{802D159B-8F56-4C3F-807E-A63828A60347}|Day03\\Day03.csproj|solutionrelative:day03\\vehicle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{802D159B-8F56-4C3F-807E-A63828A60347}|Day03\\Day03.csproj|d:\\backend\\day01\\day03\\payroll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{802D159B-8F56-4C3F-807E-A63828A60347}|Day03\\Day03.csproj|solutionrelative:day03\\payroll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{802D159B-8F56-4C3F-807E-A63828A60347}|Day03\\Day03.csproj|d:\\backend\\day01\\day03\\point2d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{802D159B-8F56-4C3F-807E-A63828A60347}|Day03\\Day03.csproj|solutionrelative:day03\\point2d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{802D159B-8F56-4C3F-807E-A63828A60347}|Day03\\Day03.csproj|d:\\backend\\day01\\day03\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{802D159B-8F56-4C3F-807E-A63828A60347}|Day03\\Day03.csproj|solutionrelative:day03\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{802D159B-8F56-4C3F-807E-A63828A60347}|Day03\\Day03.csproj|d:\\backend\\day01\\day03\\config.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{802D159B-8F56-4C3F-807E-A63828A60347}|Day03\\Day03.csproj|solutionrelative:day03\\config.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{802D159B-8F56-4C3F-807E-A63828A60347}|Day03\\Day03.csproj|d:\\backend\\day01\\day03\\utilities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{802D159B-8F56-4C3F-807E-A63828A60347}|Day03\\Day03.csproj|solutionrelative:day03\\utilities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{802D159B-8F56-4C3F-807E-A63828A60347}|Day03\\Day03.csproj|d:\\backend\\day01\\day03\\day03.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{802D159B-8F56-4C3F-807E-A63828A60347}|Day03\\Day03.csproj|solutionrelative:day03\\day03.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{802D159B-8F56-4C3F-807E-A63828A60347}|Day03\\Day03.csproj|d:\\backend\\day01\\day03\\day03.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{802D159B-8F56-4C3F-807E-A63828A60347}|Day03\\Day03.csproj|solutionrelative:day03\\day03.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE1D3A93-8AE1-4C19-B7C1-DEF0B05FEEFF}|Day02\\Day02.csproj|d:\\backend\\day01\\day02\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE1D3A93-8AE1-4C19-B7C1-DEF0B05FEEFF}|Day02\\Day02.csproj|solutionrelative:day02\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE1D3A93-8AE1-4C19-B7C1-DEF0B05FEEFF}|Day02\\Day02.csproj|d:\\backend\\day01\\day02\\e-commerce\\productnotfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE1D3A93-8AE1-4C19-B7C1-DEF0B05FEEFF}|Day02\\Day02.csproj|solutionrelative:day02\\e-commerce\\productnotfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE1D3A93-8AE1-4C19-B7C1-DEF0B05FEEFF}|Day02\\Day02.csproj|d:\\backend\\day01\\day02\\e-commerce\\producttools.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE1D3A93-8AE1-4C19-B7C1-DEF0B05FEEFF}|Day02\\Day02.csproj|solutionrelative:day02\\e-commerce\\producttools.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE1D3A93-8AE1-4C19-B7C1-DEF0B05FEEFF}|Day02\\Day02.csproj|d:\\backend\\day01\\day02\\e-commerce\\digitalproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE1D3A93-8AE1-4C19-B7C1-DEF0B05FEEFF}|Day02\\Day02.csproj|solutionrelative:day02\\e-commerce\\digitalproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE1D3A93-8AE1-4C19-B7C1-DEF0B05FEEFF}|Day02\\Day02.csproj|d:\\backend\\day01\\day02\\e-commerce\\physicalproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE1D3A93-8AE1-4C19-B7C1-DEF0B05FEEFF}|Day02\\Day02.csproj|solutionrelative:day02\\e-commerce\\physicalproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE1D3A93-8AE1-4C19-B7C1-DEF0B05FEEFF}|Day02\\Day02.csproj|d:\\backend\\day01\\day02\\e-commerce\\iproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE1D3A93-8AE1-4C19-B7C1-DEF0B05FEEFF}|Day02\\Day02.csproj|solutionrelative:day02\\e-commerce\\iproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE1D3A93-8AE1-4C19-B7C1-DEF0B05FEEFF}|Day02\\Day02.csproj|d:\\backend\\day01\\day02\\static_genaric\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE1D3A93-8AE1-4C19-B7C1-DEF0B05FEEFF}|Day02\\Day02.csproj|solutionrelative:day02\\static_genaric\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE1D3A93-8AE1-4C19-B7C1-DEF0B05FEEFF}|Day02\\Day02.csproj|d:\\backend\\day01\\day02\\1\\insufficientbalanceexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE1D3A93-8AE1-4C19-B7C1-DEF0B05FEEFF}|Day02\\Day02.csproj|solutionrelative:day02\\1\\insufficientbalanceexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE1D3A93-8AE1-4C19-B7C1-DEF0B05FEEFF}|Day02\\Day02.csproj|d:\\backend\\day01\\day02\\1\\bankaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE1D3A93-8AE1-4C19-B7C1-DEF0B05FEEFF}|Day02\\Day02.csproj|solutionrelative:day02\\1\\bankaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE1D3A93-8AE1-4C19-B7C1-DEF0B05FEEFF}|Day02\\Day02.csproj|d:\\backend\\day01\\day02\\1\\company.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE1D3A93-8AE1-4C19-B7C1-DEF0B05FEEFF}|Day02\\Day02.csproj|solutionrelative:day02\\1\\company.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE1D3A93-8AE1-4C19-B7C1-DEF0B05FEEFF}|Day02\\Day02.csproj|d:\\backend\\day01\\day02\\1\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE1D3A93-8AE1-4C19-B7C1-DEF0B05FEEFF}|Day02\\Day02.csproj|solutionrelative:day02\\1\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE1D3A93-8AE1-4C19-B7C1-DEF0B05FEEFF}|Day02\\Day02.csproj|d:\\backend\\day01\\day02\\1\\isalaries.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE1D3A93-8AE1-4C19-B7C1-DEF0B05FEEFF}|Day02\\Day02.csproj|solutionrelative:day02\\1\\isalaries.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 39,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "StringExtensions.cs",
+              "DocumentMoniker": "D:\\backend\\Day01\\Day05\\StringExtensions.cs",
+              "RelativeDocumentMoniker": "Day05\\StringExtensions.cs",
+              "ToolTip": "D:\\backend\\Day01\\Day05\\StringExtensions.cs",
+              "RelativeToolTip": "Day05\\StringExtensions.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwCAAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-06T12:02:07.602Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Supplier.cs",
+              "DocumentMoniker": "D:\\backend\\Day01\\Day05\\Supplier.cs",
+              "RelativeDocumentMoniker": "Day05\\Supplier.cs",
+              "ToolTip": "D:\\backend\\Day01\\Day05\\Supplier.cs",
+              "RelativeToolTip": "Day05\\Supplier.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-06T11:57:01.139Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Company.cs",
+              "DocumentMoniker": "D:\\backend\\Day01\\Day05\\Company.cs",
+              "RelativeDocumentMoniker": "Day05\\Company.cs",
+              "ToolTip": "D:\\backend\\Day01\\Day05\\Company.cs",
+              "RelativeToolTip": "Day05\\Company.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAgwCoAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-06T11:44:38.039Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Product.cs",
+              "DocumentMoniker": "D:\\backend\\Day01\\Day05\\Product.cs",
+              "RelativeDocumentMoniker": "Day05\\Product.cs",
+              "ToolTip": "D:\\backend\\Day01\\Day05\\Product.cs",
+              "RelativeToolTip": "Day05\\Product.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-06T11:43:50.565Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\backend\\Day01\\Day05\\Program.cs",
+              "RelativeDocumentMoniker": "Day05\\Program.cs",
+              "ToolTip": "D:\\backend\\Day01\\Day05\\Program.cs",
+              "RelativeToolTip": "Day05\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-06T11:38:23.417Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TaskManager.cs",
+              "DocumentMoniker": "D:\\backend\\Day01\\Day04\\TaskManager.cs",
+              "RelativeDocumentMoniker": "Day04\\TaskManager.cs",
+              "ToolTip": "D:\\backend\\Day01\\Day04\\TaskManager.cs",
+              "RelativeToolTip": "Day04\\TaskManager.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAgwDEAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-05T12:30:22.703Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TaskItem.cs",
+              "DocumentMoniker": "D:\\backend\\Day01\\Day04\\TaskItem.cs",
+              "RelativeDocumentMoniker": "Day04\\TaskItem.cs",
+              "ToolTip": "D:\\backend\\Day01\\Day04\\TaskItem.cs",
+              "RelativeToolTip": "Day04\\TaskItem.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBQAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-05T12:29:03.05Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\backend\\Day01\\Day04\\Program.cs",
+              "RelativeDocumentMoniker": "Day04\\Program.cs",
+              "ToolTip": "D:\\backend\\Day01\\Day04\\Program.cs",
+              "RelativeToolTip": "Day04\\Program.cs",
+              "ViewState": "AgIAAF4AAAAAAAAAAAAQwDIAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-05T11:22:15.043Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "D:\\backend\\Day01\\Day04\\Employee.cs",
+              "RelativeDocumentMoniker": "Day04\\Employee.cs",
+              "ToolTip": "D:\\backend\\Day01\\Day04\\Employee.cs",
+              "RelativeToolTip": "Day04\\Employee.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAowB0AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-05T11:54:05.559Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "StudentGrades.cs",
+              "DocumentMoniker": "D:\\backend\\Day01\\Day04\\StudentGrades.cs",
+              "RelativeDocumentMoniker": "Day04\\StudentGrades.cs",
+              "ToolTip": "D:\\backend\\Day01\\Day04\\StudentGrades.cs",
+              "RelativeToolTip": "Day04\\StudentGrades.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAgwBEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-05T12:04:36.475Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Order.cs",
+              "DocumentMoniker": "D:\\backend\\Day01\\Day04\\Order.cs",
+              "RelativeDocumentMoniker": "Day04\\Order.cs",
+              "ToolTip": "D:\\backend\\Day01\\Day04\\Order.cs",
+              "RelativeToolTip": "Day04\\Order.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAswEAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-05T12:15:56.794Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Point2D.cs",
+              "DocumentMoniker": "D:\\backend\\Day01\\Day03\\Point2D.cs",
+              "RelativeDocumentMoniker": "Day03\\Point2D.cs",
+              "ToolTip": "D:\\backend\\Day01\\Day03\\Point2D.cs",
+              "RelativeToolTip": "Day03\\Point2D.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAgwCsAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-04T10:12:11.861Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Student.cs",
+              "DocumentMoniker": "D:\\backend\\Day01\\Day03\\Student.cs",
+              "RelativeDocumentMoniker": "Day03\\Student.cs",
+              "ToolTip": "D:\\backend\\Day01\\Day03\\Student.cs",
+              "RelativeToolTip": "Day03\\Student.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAswCQAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-04T09:52:50.537Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Payroll.cs",
+              "DocumentMoniker": "D:\\backend\\Day01\\Day03\\Payroll.cs",
+              "RelativeDocumentMoniker": "Day03\\Payroll.cs",
+              "ToolTip": "D:\\backend\\Day01\\Day03\\Payroll.cs",
+              "RelativeToolTip": "Day03\\Payroll.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABQAAAB0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-04T10:35:59.232Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Vehicle.cs",
+              "DocumentMoniker": "D:\\backend\\Day01\\Day03\\Vehicle.cs",
+              "RelativeDocumentMoniker": "Day03\\Vehicle.cs",
+              "ToolTip": "D:\\backend\\Day01\\Day03\\Vehicle.cs",
+              "RelativeToolTip": "Day03\\Vehicle.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAAA2wDQAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-04T10:36:18.637Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "song.cs",
+              "DocumentMoniker": "D:\\backend\\Day01\\Day03\\song.cs",
+              "RelativeDocumentMoniker": "Day03\\song.cs",
+              "ToolTip": "D:\\backend\\Day01\\Day03\\song.cs",
+              "RelativeToolTip": "Day03\\song.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAcwCwAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-04T10:08:53.002Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\backend\\Day01\\Day03\\Program.cs",
+              "RelativeDocumentMoniker": "Day03\\Program.cs",
+              "ToolTip": "D:\\backend\\Day01\\Day03\\Program.cs",
+              "RelativeToolTip": "Day03\\Program.cs",
+              "ViewState": "AgIAAH8AAAAAAAAAAAAQwGgAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-04T10:08:34.483Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Config.cs",
+              "DocumentMoniker": "D:\\backend\\Day01\\Day03\\Config.cs",
+              "RelativeDocumentMoniker": "Day03\\Config.cs",
+              "ToolTip": "D:\\backend\\Day01\\Day03\\Config.cs",
+              "RelativeToolTip": "Day03\\Config.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAA1wB4AAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-04T10:34:44.942Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Utilities.cs",
+              "DocumentMoniker": "D:\\backend\\Day01\\Day03\\Utilities.cs",
+              "RelativeDocumentMoniker": "Day03\\Utilities.cs",
+              "ToolTip": "D:\\backend\\Day01\\Day03\\Utilities.cs",
+              "RelativeToolTip": "Day03\\Utilities.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAQwBEAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-04T10:12:58.775Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Day03.csproj",
+              "DocumentMoniker": "D:\\backend\\Day01\\Day03\\Day03.csproj",
+              "RelativeDocumentMoniker": "Day03\\Day03.csproj",
+              "ToolTip": "D:\\backend\\Day01\\Day03\\Day03.csproj",
+              "RelativeToolTip": "Day03\\Day03.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-04-04T10:58:40.345Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Day03.xml",
+              "DocumentMoniker": "D:\\backend\\Day01\\Day03\\Day03.xml",
+              "RelativeDocumentMoniker": "Day03\\Day03.xml",
+              "ToolTip": "D:\\backend\\Day01\\Day03\\Day03.xml",
+              "RelativeToolTip": "Day03\\Day03.xml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2026-04-04T10:34:47.332Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\backend\\Day01\\Day02\\Program.cs",
+              "RelativeDocumentMoniker": "Day02\\Program.cs",
+              "ToolTip": "D:\\backend\\Day01\\Day02\\Program.cs",
+              "RelativeToolTip": "Day02\\Program.cs",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAQwFYAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-04T09:25:26.238Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ProductNotFoundException.cs",
+              "DocumentMoniker": "D:\\backend\\Day01\\Day02\\E-commerce\\ProductNotFoundException.cs",
+              "RelativeDocumentMoniker": "Day02\\E-commerce\\ProductNotFoundException.cs",
+              "ToolTip": "D:\\backend\\Day01\\Day02\\E-commerce\\ProductNotFoundException.cs",
+              "RelativeToolTip": "Day02\\E-commerce\\ProductNotFoundException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-04T09:25:17.095Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "DigitalProduct.cs",
+              "DocumentMoniker": "D:\\backend\\Day01\\Day02\\E-commerce\\DigitalProduct.cs",
+              "RelativeDocumentMoniker": "Day02\\E-commerce\\DigitalProduct.cs",
+              "ToolTip": "D:\\backend\\Day01\\Day02\\E-commerce\\DigitalProduct.cs",
+              "RelativeToolTip": "Day02\\E-commerce\\DigitalProduct.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-04T09:24:35.225Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "PhysicalProduct.cs",
+              "DocumentMoniker": "D:\\backend\\Day01\\Day02\\E-commerce\\PhysicalProduct.cs",
+              "RelativeDocumentMoniker": "Day02\\E-commerce\\PhysicalProduct.cs",
+              "ToolTip": "D:\\backend\\Day01\\Day02\\E-commerce\\PhysicalProduct.cs",
+              "RelativeToolTip": "Day02\\E-commerce\\PhysicalProduct.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-04T09:24:28.728Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "IProduct.cs",
+              "DocumentMoniker": "D:\\backend\\Day01\\Day02\\E-commerce\\IProduct.cs",
+              "RelativeDocumentMoniker": "Day02\\E-commerce\\IProduct.cs",
+              "ToolTip": "D:\\backend\\Day01\\Day02\\E-commerce\\IProduct.cs",
+              "RelativeToolTip": "Day02\\E-commerce\\IProduct.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-04T09:24:18.042Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ProductTools.cs",
+              "DocumentMoniker": "D:\\backend\\Day01\\Day02\\E-commerce\\ProductTools.cs",
+              "RelativeDocumentMoniker": "Day02\\E-commerce\\ProductTools.cs",
+              "ToolTip": "D:\\backend\\Day01\\Day02\\E-commerce\\ProductTools.cs",
+              "RelativeToolTip": "Day02\\E-commerce\\ProductTools.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-04T09:24:16.547Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Person.cs",
+              "DocumentMoniker": "D:\\backend\\Day01\\Day02\\Static_genaric\\Person.cs",
+              "RelativeDocumentMoniker": "Day02\\Static_genaric\\Person.cs",
+              "ToolTip": "D:\\backend\\Day01\\Day02\\Static_genaric\\Person.cs",
+              "RelativeToolTip": "Day02\\Static_genaric\\Person.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-04T09:23:51.623Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "InsufficientBalanceException.cs",
+              "DocumentMoniker": "D:\\backend\\Day01\\Day02\\1\\InsufficientBalanceException.cs",
+              "RelativeDocumentMoniker": "Day02\\1\\InsufficientBalanceException.cs",
+              "ToolTip": "D:\\backend\\Day01\\Day02\\1\\InsufficientBalanceException.cs",
+              "RelativeToolTip": "Day02\\1\\InsufficientBalanceException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-04T09:23:38.847Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "BankAccount.cs",
+              "DocumentMoniker": "D:\\backend\\Day01\\Day02\\1\\BankAccount.cs",
+              "RelativeDocumentMoniker": "Day02\\1\\BankAccount.cs",
+              "ToolTip": "D:\\backend\\Day01\\Day02\\1\\BankAccount.cs",
+              "RelativeToolTip": "Day02\\1\\BankAccount.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwBQAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-04T09:23:18.762Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Company.cs",
+              "DocumentMoniker": "D:\\backend\\Day01\\Day02\\1\\Company.cs",
+              "RelativeDocumentMoniker": "Day02\\1\\Company.cs",
+              "ToolTip": "D:\\backend\\Day01\\Day02\\1\\Company.cs",
+              "RelativeToolTip": "Day02\\1\\Company.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-04T09:23:03.834Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "D:\\backend\\Day01\\Day02\\1\\Employee.cs",
+              "RelativeDocumentMoniker": "Day02\\1\\Employee.cs",
+              "ToolTip": "D:\\backend\\Day01\\Day02\\1\\Employee.cs",
+              "RelativeToolTip": "Day02\\1\\Employee.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAzwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-04T09:22:37.858Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "ISalaries.cs",
+              "DocumentMoniker": "D:\\backend\\Day01\\Day02\\1\\ISalaries.cs",
+              "RelativeDocumentMoniker": "Day02\\1\\ISalaries.cs",
+              "ToolTip": "D:\\backend\\Day01\\Day02\\1\\ISalaries.cs",
+              "RelativeToolTip": "Day02\\1\\ISalaries.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-04T09:22:00.959Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 463,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 613,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{fbcae063-e2c0-4ab1-a516-996ea3dafb72}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

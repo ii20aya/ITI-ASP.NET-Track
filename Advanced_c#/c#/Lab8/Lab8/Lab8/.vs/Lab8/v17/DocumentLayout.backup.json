@@ -1,0 +1,227 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Lab8\\Lab8\\Lab8\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5CC5079B-0AA8-4F1D-83F1-54C1834C328B}|Lab8\\Lab8.csproj|d:\\lab8\\lab8\\lab8\\lab8\\examinationsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5CC5079B-0AA8-4F1D-83F1-54C1834C328B}|Lab8\\Lab8.csproj|solutionrelative:lab8\\examinationsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CC5079B-0AA8-4F1D-83F1-54C1834C328B}|Lab8\\Lab8.csproj|D:\\Lab8\\Lab8\\Lab8\\lab8\\examinationsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5CC5079B-0AA8-4F1D-83F1-54C1834C328B}|Lab8\\Lab8.csproj|solutionrelative:lab8\\examinationsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CC5079B-0AA8-4F1D-83F1-54C1834C328B}|Lab8\\Lab8.csproj|D:\\Lab8\\Lab8\\Lab8\\lab8\\addnewq.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5CC5079B-0AA8-4F1D-83F1-54C1834C328B}|Lab8\\Lab8.csproj|solutionrelative:lab8\\addnewq.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CC5079B-0AA8-4F1D-83F1-54C1834C328B}|Lab8\\Lab8.csproj|D:\\Lab8\\Lab8\\Lab8\\lab8\\newexam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5CC5079B-0AA8-4F1D-83F1-54C1834C328B}|Lab8\\Lab8.csproj|solutionrelative:lab8\\newexam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CC5079B-0AA8-4F1D-83F1-54C1834C328B}|Lab8\\Lab8.csproj|D:\\Lab8\\Lab8\\Lab8\\lab8\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5CC5079B-0AA8-4F1D-83F1-54C1834C328B}|Lab8\\Lab8.csproj|solutionrelative:lab8\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CC5079B-0AA8-4F1D-83F1-54C1834C328B}|Lab8\\Lab8.csproj|D:\\Lab8\\Lab8\\Lab8\\lab8\\draganddrop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5CC5079B-0AA8-4F1D-83F1-54C1834C328B}|Lab8\\Lab8.csproj|solutionrelative:lab8\\draganddrop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CC5079B-0AA8-4F1D-83F1-54C1834C328B}|Lab8\\Lab8.csproj|D:\\Lab8\\Lab8\\Lab8\\lab8\\drawing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5CC5079B-0AA8-4F1D-83F1-54C1834C328B}|Lab8\\Lab8.csproj|solutionrelative:lab8\\drawing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CC5079B-0AA8-4F1D-83F1-54C1834C328B}|Lab8\\Lab8.csproj|D:\\Lab8\\Lab8\\Lab8\\lab8\\takeexam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5CC5079B-0AA8-4F1D-83F1-54C1834C328B}|Lab8\\Lab8.csproj|solutionrelative:lab8\\takeexam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CC5079B-0AA8-4F1D-83F1-54C1834C328B}|Lab8\\Lab8.csproj|D:\\Lab8\\Lab8\\Lab8\\lab8\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5CC5079B-0AA8-4F1D-83F1-54C1834C328B}|Lab8\\Lab8.csproj|solutionrelative:lab8\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CC5079B-0AA8-4F1D-83F1-54C1834C328B}|Lab8\\Lab8.csproj|D:\\Lab8\\Lab8\\Lab8\\lab8\\examinationsystem.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5CC5079B-0AA8-4F1D-83F1-54C1834C328B}|Lab8\\Lab8.csproj|solutionrelative:lab8\\examinationsystem.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Lab8\\Lab8\\Lab8\\Lab8\\Program.cs",
+              "RelativeDocumentMoniker": "Lab8\\Program.cs",
+              "ToolTip": "D:\\Lab8\\Lab8\\Lab8\\Lab8\\Program.cs",
+              "RelativeToolTip": "Lab8\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-08T13:08:10.328Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Drawing.cs",
+              "DocumentMoniker": "D:\\Lab8\\Lab8\\Lab8\\Lab8\\Drawing.cs",
+              "RelativeDocumentMoniker": "Lab8\\Drawing.cs",
+              "ToolTip": "D:\\Lab8\\Lab8\\Lab8\\Lab8\\Drawing.cs",
+              "RelativeToolTip": "Lab8\\Drawing.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAC0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-08T13:34:12.908Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DragAndDrop.cs",
+              "DocumentMoniker": "D:\\Lab8\\Lab8\\Lab8\\Lab8\\DragAndDrop.cs",
+              "RelativeDocumentMoniker": "Lab8\\DragAndDrop.cs",
+              "ToolTip": "D:\\Lab8\\Lab8\\Lab8\\Lab8\\DragAndDrop.cs",
+              "RelativeToolTip": "Lab8\\DragAndDrop.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAYwCoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-08T13:32:25.1Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "D:\\Lab8\\Lab8\\Lab8\\Lab8\\Form1.cs",
+              "RelativeDocumentMoniker": "Lab8\\Form1.cs",
+              "ToolTip": "D:\\Lab8\\Lab8\\Lab8\\Lab8\\Form1.cs",
+              "RelativeToolTip": "Lab8\\Form1.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAA6wB8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-17T22:31:17.565Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "NewExam.cs",
+              "DocumentMoniker": "D:\\Lab8\\Lab8\\Lab8\\Lab8\\NewExam.cs",
+              "RelativeDocumentMoniker": "Lab8\\NewExam.cs",
+              "ToolTip": "D:\\Lab8\\Lab8\\Lab8\\Lab8\\NewExam.cs",
+              "RelativeToolTip": "Lab8\\NewExam.cs",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAuwFcAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-17T21:04:16.306Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AddNewQ.cs",
+              "DocumentMoniker": "D:\\Lab8\\Lab8\\Lab8\\Lab8\\AddNewQ.cs",
+              "RelativeDocumentMoniker": "Lab8\\AddNewQ.cs",
+              "ToolTip": "D:\\Lab8\\Lab8\\Lab8\\Lab8\\AddNewQ.cs",
+              "RelativeToolTip": "Lab8\\AddNewQ.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAvwBAAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-17T21:04:31.97Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ExaminationSystem.cs",
+              "DocumentMoniker": "D:\\Lab8\\Lab8\\Lab8\\Lab8\\ExaminationSystem.cs",
+              "RelativeDocumentMoniker": "Lab8\\ExaminationSystem.cs",
+              "ToolTip": "D:\\Lab8\\Lab8\\Lab8\\Lab8\\ExaminationSystem.cs",
+              "RelativeToolTip": "Lab8\\ExaminationSystem.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAA/wFIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-08T13:37:50.619Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TakeExam.cs",
+              "DocumentMoniker": "D:\\Lab8\\Lab8\\Lab8\\Lab8\\TakeExam.cs",
+              "RelativeDocumentMoniker": "Lab8\\TakeExam.cs",
+              "ToolTip": "D:\\Lab8\\Lab8\\Lab8\\Lab8\\TakeExam.cs",
+              "RelativeToolTip": "Lab8\\TakeExam.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-17T21:59:13.856Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ExaminationSystem.cs [Design]",
+              "DocumentMoniker": "D:\\Lab8\\Lab8\\Lab8\\Lab8\\ExaminationSystem.cs",
+              "RelativeDocumentMoniker": "Lab8\\ExaminationSystem.cs",
+              "ToolTip": "D:\\Lab8\\Lab8\\Lab8\\Lab8\\ExaminationSystem.cs [Design]",
+              "RelativeToolTip": "Lab8\\ExaminationSystem.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-08T13:37:34.734Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ExaminationSystem.Designer.cs",
+              "DocumentMoniker": "D:\\Lab8\\Lab8\\Lab8\\Lab8\\ExaminationSystem.Designer.cs",
+              "RelativeDocumentMoniker": "Lab8\\ExaminationSystem.Designer.cs",
+              "ToolTip": "D:\\Lab8\\Lab8\\Lab8\\Lab8\\ExaminationSystem.Designer.cs",
+              "RelativeToolTip": "Lab8\\ExaminationSystem.Designer.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAuwFQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-17T21:56:43.583Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 168,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 1284,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{fbcae063-e2c0-4ab1-a516-996ea3dafb72}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

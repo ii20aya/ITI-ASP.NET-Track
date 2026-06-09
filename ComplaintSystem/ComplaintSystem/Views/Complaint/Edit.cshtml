@@ -1,0 +1,131 @@
+@model ComplaintEditVM
+
+@{
+    ViewData["Title"] = "Edit Complaint";
+}
+
+@section Styles {
+<style>
+    .form-card { border: none; border-radius: 16px; }
+</style>
+}
+
+<div class="row justify-content-center">
+    <div class="col-lg-7">
+
+        <div class="page-header mb-4">
+            <h3 class="fw-bold mb-0">✏️ Edit Complaint #@Model.Id</h3>
+            <small class="text-muted">Modify details or update the complaint status.</small>
+        </div>
+
+        <div class="card form-card shadow-sm p-4">
+
+            <div asp-validation-summary="ModelOnly" class="alert alert-danger py-2 mb-3"></div>
+
+            <form asp-action="Edit" asp-route-id="@Model.Id" method="post"
+                  novalidate id="editForm">
+                @Html.AntiForgeryToken()
+
+                @* Hidden Id needed by Remote validation's AdditionalFields *@
+                <input asp-for="Id" type="hidden" />
+
+                <!-- Title -->
+                <div class="mb-3">
+                    <label asp-for="Title" class="form-label fw-semibold">
+                        Title <span class="text-danger">*</span>
+                    </label>
+                    <input asp-for="Title" class="form-control" autocomplete="off" />
+                    <span asp-validation-for="Title" class="text-danger small"></span>
+                </div>
+
+                <!-- Description -->
+                <div class="mb-3">
+                    <label asp-for="Description" class="form-label fw-semibold">
+                        Description <span class="text-danger">*</span>
+                    </label>
+                    <textarea asp-for="Description" class="form-control" rows="5"
+                              id="descInput"></textarea>
+                    <span asp-validation-for="Description" class="text-danger small"></span>
+                    <div class="d-flex justify-content-end">
+                        <span class="text-muted small" id="descCounter">
+                            @Model.Description.Length / 2000
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Category -->
+                <div class="mb-3">
+                    <label asp-for="CategoryId" class="form-label fw-semibold">
+                        Category <span class="text-danger">*</span>
+                    </label>
+                    <select asp-for="CategoryId" asp-items="Model.Categories"
+                            class="form-select">
+                        <option value="">— Select a category —</option>
+                    </select>
+                    <span asp-validation-for="CategoryId" class="text-danger small"></span>
+                </div>
+
+                <!-- Status -->
+                <div class="mb-4">
+                    <label asp-for="Status" class="form-label fw-semibold">Status</label>
+                    <select asp-for="Status" asp-items="Model.Statuses"
+                            class="form-select" id="statusSelect">
+                    </select>
+                    <span asp-validation-for="Status" class="text-danger small"></span>
+                    <div class="mt-2" id="statusPreview"></div>
+                </div>
+
+                <div class="d-flex gap-2">
+                    <button type="submit" class="btn btn-primary px-4">
+                        <i class="bi bi-check-circle-fill me-1"></i>Save Changes
+                    </button>
+                    <a asp-action="Details" asp-route-id="@Model.Id"
+                       class="btn btn-outline-secondary">Cancel</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+<script>
+    $(function () {
+
+        // ── Character counter ──────────────────────────────────────────────
+        $('#descInput').on('input', function () {
+            var len = $(this).val().length;
+            $('#descCounter')
+                .text(len + ' / 2000')
+                .toggleClass('text-danger', len > 1900);
+        });
+
+        // ── Live status badge preview ──────────────────────────────────────
+        var statusColors = {
+            '0': 'warning text-dark',   // Pending
+            '1': 'info text-dark',       // InProgress
+            '2': 'success',              // Resolved
+            '3': 'danger'                // Rejected
+        };
+        var statusLabels = {
+            '0': '⏳ Pending',
+            '1': '🔄 In Progress',
+            '2': '✅ Resolved',
+            '3': '❌ Rejected'
+        };
+
+        function updateStatusPreview() {
+            var val = $('#statusSelect').val();
+            if (statusColors[val]) {
+                $('#statusPreview').html(
+                    '<span class="badge bg-' + statusColors[val] + '">' +
+                    statusLabels[val] + '</span>'
+                );
+            }
+        }
+
+        $('#statusSelect').on('change', updateStatusPreview);
+        updateStatusPreview(); // run on page load
+
+    });
+</script>
+}

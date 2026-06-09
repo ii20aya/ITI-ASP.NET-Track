@@ -1,0 +1,167 @@
+﻿using System;
+using System.Linq;
+using Xunit;
+using QuickSortApp.Algorithms;
+
+namespace QuickSortApp.Tests
+{
+    public class QuickSortTests
+    {
+        // Helper: run both recursive and iterative versions and assert they match expected
+        private static void AssertBothSort(int[] input, int[] expected)
+        {
+            int[] rec = (int[])input?.Clone();
+            int[] itr = (int[])input?.Clone();
+
+            // Recursive
+            Exception recEx = Record.Exception(() => QuickSort.RecursiveSort(rec));
+            // Iterative
+            Exception itrEx = Record.Exception(() => QuickSort.IterativeSort(itr));
+
+            // If input was null we expect the methods to not throw (per test requirements)
+            Assert.Null(recEx);
+            Assert.Null(itrEx);
+
+            // If input was null, nothing to compare further
+            if (input == null) return;
+
+            Assert.Equal(expected, rec);
+            Assert.Equal(expected, itr);
+        }
+
+        private static int[] SortedCopy(int[] arr)
+        {
+            if (arr == null) return null;
+            int[] copy = (int[])arr.Clone();
+            Array.Sort(copy);
+            return copy;
+        }
+
+        [Fact]
+        public void RecursiveAndIterative_NullArray_DoesNotThrow()
+        {
+            // Per requirements: passing null should not throw
+            AssertBothSort(null, null);
+        }
+
+        [Fact]
+        public void Sort_EmptyArray_RemainsEmpty()
+        {
+            int[] arr = new int[0];
+            AssertBothSort(arr, new int[0]);
+        }
+
+        [Fact]
+        public void Sort_SingleElement_Unchanged()
+        {
+            int[] arr = new[] { 42 };
+            AssertBothSort(arr, new[] { 42 });
+        }
+
+        [Fact]
+        public void Sort_AlreadySortedArray_Correct()
+        {
+            int[] arr = Enumerable.Range(1, 100).ToArray();
+            AssertBothSort(arr, SortedCopy(arr));
+        }
+
+        [Fact]
+        public void Sort_ReverseSortedArray_Correct()
+        {
+            int[] arr = Enumerable.Range(1, 100).Reverse().ToArray();
+            AssertBothSort(arr, SortedCopy(arr));
+        }
+
+        [Fact]
+        public void Sort_WithDuplicates_Correct()
+        {
+            int[] arr = new[] { 5, 3, 5, 2, 5, 1, 3 };
+            AssertBothSort(arr, SortedCopy(arr));
+        }
+
+        [Fact]
+        public void Sort_AllIdentical_Correct()
+        {
+            int[] arr = Enumerable.Repeat(7, 50).ToArray();
+            AssertBothSort(arr, SortedCopy(arr));
+        }
+
+        [Fact]
+        public void Sort_NegativeNumbers_Correct()
+        {
+            int[] arr = new[] { -5, -1, -3, -2, -4 };
+            AssertBothSort(arr, SortedCopy(arr));
+        }
+
+        [Fact]
+        public void Sort_MixedNegativeAndPositive_Correct()
+        {
+            int[] arr = new[] { -10, 5, -3, 0, 8, -1, 7 };
+            AssertBothSort(arr, SortedCopy(arr));
+        }
+
+        [Fact]
+        public void Sort_IntMinAndMax_Correct()
+        {
+            int[] arr = new[] { int.MinValue, 0, int.MaxValue, -1, 1 };
+            AssertBothSort(arr, SortedCopy(arr));
+        }
+
+        [Fact]
+        public void Sort_LargeRandomArray_MatchesArraySort()
+        {
+            var rng = new Random(12345);
+            int[] arr = Enumerable.Range(0, 10_000).Select(_ => rng.Next(int.MinValue, int.MaxValue)).ToArray();
+
+            int[] expected = SortedCopy(arr);
+
+            int[] rec = (int[])arr.Clone();
+            int[] itr = (int[])arr.Clone();
+
+            // Ensure both algorithms complete without throwing
+            Exception recEx = Record.Exception(() => QuickSort.RecursiveSort(rec));
+            Exception itrEx = Record.Exception(() => QuickSort.IterativeSort(itr));
+            Assert.Null(recEx);
+            Assert.Null(itrEx);
+
+            Assert.Equal(expected, rec);
+            Assert.Equal(expected, itr);
+        }
+    }
+
+    public class OtherSortersTests
+    {
+        private static int[] SortedCopy(int[] arr)
+        {
+            if (arr == null) return null;
+            int[] copy = (int[])arr.Clone();
+            Array.Sort(copy);
+            return copy;
+        }
+
+        [Theory]
+        [InlineData(new int[] { })]
+        [InlineData(new int[] { 1 })]
+        [InlineData(new int[] { 3, 1, 2 })]
+        [InlineData(new int[] { 5, 4, 3, 2, 1 })]
+        [InlineData(new int[] { 1, 1, 1, 1 })]
+        public void MergeSort_VariousInputs_Correct(int[] arr)
+        {
+            int[] expected = SortedCopy(arr);
+            OtherSorters.MergeSort(arr);
+            Assert.Equal(expected, arr);
+        }
+
+        [Theory]
+        [InlineData(new int[] { })]
+        [InlineData(new int[] { 42 })]
+        [InlineData(new int[] { 9, 5, 3, 7, 1 })]
+        [InlineData(new int[] { -5, 0, 5 })]
+        public void HeapSort_VariousInputs_Correct(int[] arr)
+        {
+            int[] expected = SortedCopy(arr);
+            OtherSorters.HeapSort(arr);
+            Assert.Equal(expected, arr);
+        }
+    }
+}

@@ -1,0 +1,5 @@
+D:\backend\testing\testing\obj\Debug\net4.7\testing.csproj.AssemblyReference.cache
+D:\backend\testing\testing\obj\Debug\net4.7\testing.GeneratedMSBuildEditorConfig.editorconfig
+D:\backend\testing\testing\obj\Debug\net4.7\testing.AssemblyInfoInputs.cache
+D:\backend\testing\testing\obj\Debug\net4.7\testing.AssemblyInfo.cs
+D:\backend\testing\testing\obj\Debug\net4.7\testing.csproj.CoreCompileInputs.cache

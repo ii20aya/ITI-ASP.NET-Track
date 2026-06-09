@@ -1,0 +1,301 @@
+@using ComplaintSystem.Models
+@using ComplaintSystem.Models.Enum
+@model List<Complaint>
+
+@{
+    ViewData["Title"] = "Admin Dashboard";
+
+    int total      = Model.Count;
+    int pending    = Model.Count(c => c.Status == ComplaintStatus.Pending);
+    int inProgress = Model.Count(c => c.Status == ComplaintStatus.InProgress);
+    int resolved   = Model.Count(c => c.Status == ComplaintStatus.Resolved);
+    int rejected   = Model.Count(c => c.Status == ComplaintStatus.Rejected);
+}
+
+<div class="d-flex align-items-center justify-content-between mb-1">
+    <div class="page-header mb-0">
+        <h2 class="fw-800 mb-0">Admin Dashboard</h2>
+        <p class="text-muted mb-0" style="font-size:.82rem">System overview — All complaints</p>
+    </div>
+    <span class="badge-status badge-inprogress" style="font-size:.78rem;padding:.32em .9em">Admin</span>
+</div>
+
+<div class="stat-strip">
+    <div class="stat-card">
+        <div class="d-flex justify-content-between align-items-start">
+            <div><div class="stat-num">@total</div><div class="stat-lbl">Total</div></div>
+            <div class="stat-icon navy"><i class="bi bi-collection-fill"></i></div>
+        </div>
+    </div>
+    <div class="stat-card">
+        <div class="d-flex justify-content-between align-items-start">
+            <div><div class="stat-num" style="color:#92400E">@pending</div><div class="stat-lbl">Pending</div></div>
+            <div class="stat-icon amber"><i class="bi bi-hourglass-split"></i></div>
+        </div>
+    </div>
+    <div class="stat-card">
+        <div class="d-flex justify-content-between align-items-start">
+            <div><div class="stat-num" style="color:#1D4ED8">@inProgress</div><div class="stat-lbl">In Progress</div></div>
+            <div class="stat-icon navy"><i class="bi bi-arrow-repeat"></i></div>
+        </div>
+    </div>
+    <div class="stat-card">
+        <div class="d-flex justify-content-between align-items-start">
+            <div><div class="stat-num" style="color:#065F46">@resolved</div><div class="stat-lbl">Resolved</div></div>
+            <div class="stat-icon green"><i class="bi bi-check-circle-fill"></i></div>
+        </div>
+    </div>
+    <div class="stat-card">
+        <div class="d-flex justify-content-between align-items-start">
+            <div><div class="stat-num" style="color:#991B1B">@rejected</div><div class="stat-lbl">Rejected</div></div>
+            <div class="stat-icon red"><i class="bi bi-x-circle-fill"></i></div>
+        </div>
+    </div>
+</div>
+
+<div class="tab-bar">
+    <button class="tab-btn active" onclick="switchTab('overview', this)">
+        <i class="bi bi-list-ul me-1"></i>All Complaints
+    </button>
+    <button class="tab-btn" onclick="switchTab('myContent', this)">
+        <i class="bi bi-sliders me-1"></i>My Content
+        <span style="font-size:.72rem;color:var(--text-muted)">(Edit / Reply / Delete)</span>
+    </button>
+</div>
+
+@* ── TAB 1: Read-only overview ── *@
+<div id="tab-overview">
+    <div class="info-note">
+        <i class="bi bi-info-circle-fill" style="color:var(--navy);opacity:.6"></i>
+        Read-only view. Switch to <strong>My Content</strong> to change status, add or delete replies.
+    </div>
+
+    @if (!Model.Any())
+    {
+        <div class="text-center py-5 text-muted">
+            <i class="bi bi-inbox" style="font-size:2.5rem;opacity:.25;display:block;margin-bottom:1rem"></i>
+            No complaints yet.
+        </div>
+    }
+    else
+    {
+        <div class="table-wrap">
+            <table class="table mb-0">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Title</th>
+                        <th>Category</th>
+                        <th>Status</th>
+                        <th>Replies</th>
+                        <th>Date</th>
+                        <th style="width:120px">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var c in Model)
+                    {
+                        string sc;
+                        string sl;
+
+                        if (c.Status == ComplaintStatus.Pending)       { sc = "badge-pending";    sl = "Pending"; }
+                        else if (c.Status == ComplaintStatus.InProgress) { sc = "badge-inprogress"; sl = "In Progress"; }
+                        else if (c.Status == ComplaintStatus.Resolved)   { sc = "badge-resolved";   sl = "Resolved"; }
+                        else if (c.Status == ComplaintStatus.Rejected)   { sc = "badge-rejected";   sl = "Rejected"; }
+                        else                                             { sc = "badge-pending";    sl = "Unknown"; }
+
+                        <tr class="complaint-row">
+                            <td class="text-muted" style="font-size:.8rem;font-weight:600">#@c.Id</td>
+                            <td style="font-size:.88rem;font-weight:600">@c.Title</td>
+                            <td style="font-size:.82rem;color:var(--text-soft)">@c.Category?.Name</td>
+                            <td><span class="badge-status @sc">@sl</span></td>
+                            <td>
+                                <span style="font-size:.8rem;color:var(--text-muted)">
+                                    <i class="bi bi-chat-dots me-1"></i>@c.Replies.Count
+                                </span>
+                            </td>
+                            <td style="font-size:.78rem;color:var(--text-muted)">
+                                @c.CreatedAt.ToString("dd MMM yyyy")
+                            </td>
+                            <td>
+                                <div class="d-flex gap-1">
+                                    <a asp-controller="Complaint" asp-action="Details" asp-route-id="@c.Id"
+                                       class="btn btn-outline-secondary btn-sm" title="View Details">
+                                        <i class="bi bi-eye"></i>
+                                    </a>
+                                    @* ── Live Chat button — same as user ── *@
+                                    <a asp-controller="Complaint" asp-action="Chat" asp-route-id="@c.Id"
+                                       class="btn btn-sm"
+                                       style="background:var(--navy);color:#fff;border:none;border-radius:var(--r-sm)"
+                                       title="Live Chat">
+                                        <i class="bi bi-chat-dots-fill"></i>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+</div>
+
+@* ── TAB 2: My Content — full control ── *@
+<div id="tab-myContent" style="display:none">
+    <div class="info-note">
+        <i class="bi bi-pencil-square" style="color:var(--caramel)"></i>
+        Change status, add replies, delete replies, and open live chat on any complaint.
+    </div>
+
+    @if (!Model.Any())
+    {
+        <div class="text-center py-5 text-muted">No complaints to manage.</div>
+    }
+    else
+    {
+        <div class="own-panel">
+            <div class="panel-header">
+                <span><i class="bi bi-sliders me-2"></i>Manage Complaints</span>
+                <small class="text-muted">@Model.Count item(s)</small>
+            </div>
+
+            @foreach (var c in Model)
+            {
+                string sc2;
+                string sl2;
+
+                if (c.Status == ComplaintStatus.Pending)       { sc2 = "badge-pending";    sl2 = "Pending"; }
+                else if (c.Status == ComplaintStatus.InProgress) { sc2 = "badge-inprogress"; sl2 = "In Progress"; }
+                else if (c.Status == ComplaintStatus.Resolved)   { sc2 = "badge-resolved";   sl2 = "Resolved"; }
+                else if (c.Status == ComplaintStatus.Rejected)   { sc2 = "badge-rejected";   sl2 = "Rejected"; }
+                else                                             { sc2 = "badge-pending";    sl2 = "Unknown"; }
+
+                <div style="border-bottom:1px solid var(--border)">
+                    <div style="display:flex;align-items:center;gap:.75rem;padding:.85rem 1.25rem">
+                        <button class="admin-expand-btn" onclick="toggleOwn(@c.Id, this)">
+                            <i class="bi bi-chevron-right"></i>
+                        </button>
+                        <div style="flex:1;min-width:0">
+                            <div style="font-size:.9rem;font-weight:600">@c.Title</div>
+                            <div style="font-size:.76rem;color:var(--text-muted)">
+                                @c.Category?.Name &middot; @c.CreatedAt.ToString("dd MMM yyyy")
+                            </div>
+                        </div>
+                        <span class="badge-status @sc2">@sl2</span>
+                        <div class="d-flex gap-1">
+                            <a asp-controller="Complaint" asp-action="Details" asp-route-id="@c.Id"
+                               class="btn btn-outline-secondary btn-sm" style="font-size:.75rem"
+                               title="View Details">
+                                <i class="bi bi-eye"></i>
+                            </a>
+                            @* ── Live Chat button ── *@
+                            <a asp-controller="Complaint" asp-action="Chat" asp-route-id="@c.Id"
+                               class="btn btn-sm"
+                               style="background:var(--navy);color:#fff;border:none;border-radius:var(--r-sm);font-size:.75rem"
+                               title="Live Chat">
+                                <i class="bi bi-chat-dots-fill"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="own-detail" id="own-@c.Id">
+
+                        @* Change status *@
+                        <div class="mb-3">
+                            <label class="form-label" style="font-size:.8rem;font-weight:700;color:var(--navy)">
+                                <i class="bi bi-arrow-left-right me-1"></i>Change Status
+                            </label>
+                            <form asp-controller="Admin" asp-action="UpdateStatus" method="post"
+                                  class="d-flex gap-2 align-items-center">
+                                @Html.AntiForgeryToken()
+                                <input type="hidden" name="id" value="@c.Id" />
+                                <select name="status" class="form-select form-select-sm" style="max-width:180px">
+                                    @foreach (ComplaintStatus s in Enum.GetValues<ComplaintStatus>())
+                                    {
+                                        if (c.Status == s)
+                                        {
+                                            <option value="@((int)s)" selected>@s</option>
+                                        }
+                                        else
+                                        {
+                                            <option value="@((int)s)">@s</option>
+                                        }
+                                    }
+                                </select>
+                                <button type="submit" class="btn btn-primary btn-sm">
+                                    <i class="bi bi-check2 me-1"></i>Update
+                                </button>
+                            </form>
+                        </div>
+
+                        @* Replies *@
+                        <div class="mb-3">
+                            <div style="font-size:.8rem;font-weight:700;color:var(--navy);margin-bottom:.5rem">
+                                <i class="bi bi-chat-dots me-1"></i>Replies (@c.Replies.Count)
+                            </div>
+                            @if (!c.Replies.Any())
+                            {
+                                <p class="text-muted" style="font-size:.82rem;font-style:italic">No replies yet.</p>
+                            }
+                            else
+                            {
+                                @foreach (var r in c.Replies.OrderBy(x => x.CreatedAt))
+                                {
+                                    <div class="reply-row">
+                                        <div>
+                                            <div class="reply-txt">@r.Content</div>
+                                            <div class="reply-ts mt-1">
+                                                <i class="bi bi-clock me-1"></i>
+                                                @r.CreatedAt.ToString("dd MMM yyyy, HH:mm")
+                                            </div>
+                                        </div>
+                                        <form asp-controller="Admin" asp-action="DeleteReply" method="post"
+                                              onsubmit="return confirm('Delete this reply?')">
+                                            @Html.AntiForgeryToken()
+                                            <input type="hidden" name="replyId" value="@r.Id" />
+                                            <input type="hidden" name="complaintId" value="@c.Id" />
+                                            <button type="submit" class="btn btn-outline-danger btn-sm"
+                                                    style="font-size:.72rem;padding:.2rem .5rem">
+                                                <i class="bi bi-trash"></i>
+                                            </button>
+                                        </form>
+                                    </div>
+                                }
+                            }
+                        </div>
+
+                        @* Add reply *@
+                        <form asp-controller="Admin" asp-action="AddReply" method="post"
+                              class="d-flex gap-2">
+                            @Html.AntiForgeryToken()
+                            <input type="hidden" name="complaintId" value="@c.Id" />
+                            <input type="text" name="content" class="form-control form-control-sm"
+                                   placeholder="Write a reply as admin..." required maxlength="1000" />
+                            <button type="submit" class="btn btn-success btn-sm px-3"
+                                    style="white-space:nowrap">
+                                <i class="bi bi-send me-1"></i>Reply
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+</div>
+
+@section Scripts {
+    <script>
+        function switchTab(id, btn) {
+            document.querySelectorAll('.tab-btn').forEach(function (b) { b.classList.remove('active'); });
+            btn.classList.add('active');
+            document.getElementById('tab-overview').style.display  = id === 'overview'  ? '' : 'none';
+            document.getElementById('tab-myContent').style.display = id === 'myContent' ? '' : 'none';
+        }
+        function toggleOwn(id, btn) {
+            var panel  = document.getElementById('own-' + id);
+            var isOpen = panel.style.display === 'block';
+            panel.style.display = isOpen ? 'none' : 'block';
+            btn.style.transform = isOpen ? '' : 'rotate(90deg)';
+        }
+    </script>
+}

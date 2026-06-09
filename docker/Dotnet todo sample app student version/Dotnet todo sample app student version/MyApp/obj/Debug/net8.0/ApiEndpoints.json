@@ -1,0 +1,113 @@
+[
+  {
+    "ContainingType": "MyApp.Features.Todos.TodoFeature\u002B\u003C\u003Ec",
+    "Method": "\u003CMapTodoEndpoints\u003Eb__1_0",
+    "RelativePath": "api/todos/",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.ICollection\u00601[[MyApp.Features.Todos.Todo, MyApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MyApp.Features.Todos.TodoFeature\u002B\u003C\u003Ec",
+    "Method": "\u003CMapTodoEndpoints\u003Eb__1_2",
+    "RelativePath": "api/todos/",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MyApp.Features.Todos.CreateTodoRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MyApp.Features.Todos.TodoFeature\u002B\u003C\u003Ec",
+    "Method": "\u003CMapTodoEndpoints\u003Eb__1_1",
+    "RelativePath": "api/todos/{id:guid}",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MyApp.Features.Todos.TodoFeature\u002B\u003C\u003Ec",
+    "Method": "\u003CMapTodoEndpoints\u003Eb__1_3",
+    "RelativePath": "api/todos/{id:guid}",
+    "HttpMethod": "PUT",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "MyApp.Features.Todos.UpdateTodoRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MyApp.Features.Todos.TodoFeature\u002B\u003C\u003Ec",
+    "Method": "\u003CMapTodoEndpoints\u003Eb__1_4",
+    "RelativePath": "api/todos/{id:guid}",
+    "HttpMethod": "DELETE",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  }
+]

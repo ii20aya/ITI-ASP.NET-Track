@@ -1,0 +1,133 @@
+@using ComplaintSystem.Models
+@model ComplaintSystem.ViewModels.ChatVM
+
+@{
+    ViewData["Title"] = "Live Chat – Complaint #" + Model.ComplaintId;
+}
+
+<div style="max-width:720px;margin:0 auto">
+
+    @* Back link *@
+    <div class="d-flex align-items-center gap-2 mb-3">
+        <a asp-controller="Complaint" asp-action="Details" asp-route-id="@Model.ComplaintId"
+           class="btn btn-sm btn-outline-secondary">
+            <i class="bi bi-arrow-left me-1"></i>Back to Complaint
+        </a>
+        <span class="text-muted" style="font-size:.82rem">
+            <i class="bi bi-chat-dots me-1"></i>@Model.ComplaintTitle
+        </span>
+    </div>
+
+    @* Chat widget *@
+    <div class="chat-container">
+
+        <div class="chat-header">
+            <h5>
+                <i class="bi bi-lightning-charge-fill me-2"></i>
+                Live Chat — Complaint #@Model.ComplaintId
+            </h5>
+            <span id="status" style="font-size:.78rem;opacity:.8">
+                Connecting...
+            </span>
+        </div>
+
+        <div class="chat-messages" id="messages">
+            @foreach (var msg in Model.History)
+            {
+                bool isMine = msg.SenderName == User.Identity!.Name;
+                <div class="chat-bubble @(isMine ? "mine" : "")">
+                    <span class="sender">@msg.SenderName</span>
+                    <p>@msg.Message</p>
+                    <span class="time">@msg.SentAt.ToString("HH:mm")</span>
+                </div>
+            }
+        </div>
+
+        <div class="chat-input">
+            <input id="msgInput" type="text" class="form-control"
+                   placeholder="Type a message and press Enter..." autocomplete="off" />
+            <button onclick="sendMsg()" class="btn btn-primary" id="sendBtn" disabled>
+                <i class="bi bi-send-fill"></i>
+            </button>
+        </div>
+
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/signalr/signalr.js"></script>
+    <script>
+        var complaintId = @Model.ComplaintId;
+        var myName      = "@User.Identity?.Name";
+
+        var connection = new signalR.HubConnectionBuilder()
+            .withUrl("/chatHub")
+            .withAutomaticReconnect()
+            .build();
+
+        connection.on("ReceiveMessage", function (sender, message, time) {
+            appendBubble(sender, message, time, sender === myName);
+        });
+
+        connection.onreconnecting(function () {
+            setStatus("Reconnecting...", "#FCD34D");
+        });
+
+        connection.onreconnected(function () {
+            setStatus("Connected", "#6EE7B7");
+        });
+
+        connection.start()
+            .then(function () {
+                setStatus("Connected", "#6EE7B7");
+                document.getElementById("sendBtn").disabled = false;
+                return connection.invoke("JoinComplaintGroup", complaintId);
+            })
+            .catch(function (err) {
+                setStatus("Connection failed", "#FCA5A5");
+                console.error(err);
+            });
+
+        function sendMsg() {
+            var msg = document.getElementById("msgInput").value.trim();
+            if (!msg) return;
+            connection.invoke("SendMessage", complaintId, msg)
+                .catch(function (err) { console.error(err); });
+            document.getElementById("msgInput").value = "";
+        }
+
+        document.getElementById("msgInput").addEventListener("keypress", function (e) {
+            if (e.key === "Enter") { sendMsg(); }
+        });
+
+        function appendBubble(sender, message, time, mine) {
+            var box = document.getElementById("messages");
+            var div = document.createElement("div");
+            div.className = "chat-bubble" + (mine ? " mine" : "");
+            var s = document.createElement("span");
+            s.className = "sender";
+            s.textContent = sender;
+            var p = document.createElement("p");
+            p.textContent = message;
+            var t = document.createElement("span");
+            t.className = "time";
+            t.textContent = time;
+            div.appendChild(s);
+            div.appendChild(p);
+            div.appendChild(t);
+            box.appendChild(div);
+            div.scrollIntoView({ behavior: "smooth" });
+        }
+
+        function setStatus(text, color) {
+            document.getElementById("status").textContent = text;
+            document.getElementById("status").style.color = color;
+        }
+
+        // Scroll to bottom on load
+        (function () {
+            var box = document.getElementById("messages");
+            box.scrollTop = box.scrollHeight;
+        })();
+    </script>
+}

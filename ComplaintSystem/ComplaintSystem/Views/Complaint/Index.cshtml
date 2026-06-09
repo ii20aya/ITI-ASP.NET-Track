@@ -1,0 +1,157 @@
+@model IEnumerable<ComplaintListItemVM>
+@using ComplaintSystem.Models.Enum
+
+@{
+    ViewData["Title"] = "All Complaints";
+    var grouped = Model.GroupBy(c => c.CategoryName).OrderBy(g => g.Key).ToList();
+}
+
+<div class="d-flex align-items-center justify-content-between mb-3">
+    <div class="page-header mb-0">
+        <h2 class="fw-800 mb-0">All Complaints</h2>
+        <p class="text-soft mb-0" style="font-size:.85rem">@Model.Count() complaint(s) in the system</p>
+    </div>
+    @if (!User.IsInRole("Admin"))
+    {
+        <a asp-action="Create" class="btn btn-primary">
+            <i class="bi bi-plus-circle me-1"></i>New Complaint
+        </a>
+    }
+</div>
+
+@if (!Model.Any())
+{
+    <div class="text-center py-5 text-muted">
+        <i class="bi bi-inbox" style="font-size:3rem;opacity:.3;display:block;margin-bottom:1rem"></i>
+        <h5>No complaints yet</h5>
+        @if (!User.IsInRole("Admin"))
+        {
+            <a asp-action="Create" class="btn btn-outline-primary mt-2">Submit the first one</a>
+        }
+    </div>
+}
+else
+{
+    @foreach (var group in grouped)
+    {
+        var latest = group.OrderByDescending(c => c.CreatedAt).Take(3).ToList();
+
+        <div class="cat-section">
+            <div class="cat-section-header">
+                <div class="cat-section-title">
+                    <div class="cat-dot"></div>
+                    <h5>@group.Key</h5>
+                </div>
+                <span class="cat-latest-label">
+                    Latest @latest.Count of @group.Count() — hover to expand
+                </span>
+            </div>
+
+            <div class="row g-3">
+                @foreach (var item in latest)
+                {
+                    string statusCls;
+                    string statusLbl;
+
+                    if (item.Status == ComplaintStatus.Pending)
+                    {
+                        statusCls = "badge-pending";
+                        statusLbl = "Pending";
+                    }
+                    else if (item.Status == ComplaintStatus.InProgress)
+                    {
+                        statusCls = "badge-inprogress";
+                        statusLbl = "In Progress";
+                    }
+                    else if (item.Status == ComplaintStatus.Resolved)
+                    {
+                        statusCls = "badge-resolved";
+                        statusLbl = "Resolved";
+                    }
+                    else if (item.Status == ComplaintStatus.Rejected)
+                    {
+                        statusCls = "badge-rejected";
+                        statusLbl = "Rejected";
+                    }
+                    else
+                    {
+                        statusCls = "badge-pending";
+                        statusLbl = "Unknown";
+                    }
+
+                    <div class="col-md-4">
+                        <div class="cmp-card" onclick="toggleCard(this)">
+
+                            @* Closed view *@
+                            <div class="cmp-card-closed">
+                                <div style="flex:1;min-width:0">
+                                    <div class="cmp-title">@item.Title</div>
+                                    <div class="cmp-date">
+                                        <i class="bi bi-clock me-1"></i>
+                                        @item.CreatedAt.ToString("dd MMM yyyy")
+                                    </div>
+                                </div>
+                                <span class="badge-status @statusCls">@statusLbl</span>
+                                <i class="bi bi-chevron-down cmp-expand-icon"></i>
+                            </div>
+
+                            @* Expanded details *@
+                            <div class="cmp-card-details">
+                                <div class="cmp-detail-row mt-2">
+                                    <i class="bi bi-tag-fill"></i>
+                                    <span>@item.CategoryName</span>
+                                </div>
+                                <div class="cmp-detail-row">
+                                    <i class="bi bi-calendar3"></i>
+                                    <span>@item.CreatedAt.ToString("dd MMM yyyy, HH:mm")</span>
+                                </div>
+                                <div class="cmp-detail-row">
+                                    <i class="bi bi-chat-dots"></i>
+                                    <span>@item.RepliesCount reply(s)</span>
+                                </div>
+                                <div class="mt-2 d-flex gap-2">
+                                    <a asp-action="Details" asp-route-id="@item.Id"
+                                       class="btn btn-outline-primary btn-sm"
+                                       onclick="event.stopPropagation()">
+                                        <i class="bi bi-eye me-1"></i>View Details
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                }
+
+                @* Placeholder if less than 3 *@
+                @for (int i = latest.Count; i < 3; i++)
+                {
+                    <div class="col-md-4">
+                        <div class="cmp-card" style="opacity:.32;pointer-events:none">
+                            <div class="cmp-card-closed">
+                                <div class="text-muted" style="font-size:.82rem;font-style:italic">
+                                    No more in this category
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    }
+}
+
+@section Scripts {
+    <script>
+        function toggleCard(card) {
+            var isExpanded = card.classList.contains('expanded');
+            // Close all
+            document.querySelectorAll('.cmp-card.expanded').forEach(function (c) {
+                c.classList.remove('expanded');
+            });
+            // Open this one if it wasn't open
+            if (!isExpanded) {
+                card.classList.add('expanded');
+            }
+        }
+    </script>
+}

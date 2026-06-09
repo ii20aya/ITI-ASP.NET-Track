@@ -1,0 +1,14 @@
+D:\backend\Linq_iti\Day02\bin\Debug\net8.0\Day02.exe
+D:\backend\Linq_iti\Day02\bin\Debug\net8.0\Day02.deps.json
+D:\backend\Linq_iti\Day02\bin\Debug\net8.0\Day02.runtimeconfig.json
+D:\backend\Linq_iti\Day02\bin\Debug\net8.0\Day02.dll
+D:\backend\Linq_iti\Day02\bin\Debug\net8.0\Day02.pdb
+D:\backend\Linq_iti\Day02\obj\Debug\net8.0\Day02.GeneratedMSBuildEditorConfig.editorconfig
+D:\backend\Linq_iti\Day02\obj\Debug\net8.0\Day02.AssemblyInfoInputs.cache
+D:\backend\Linq_iti\Day02\obj\Debug\net8.0\Day02.AssemblyInfo.cs
+D:\backend\Linq_iti\Day02\obj\Debug\net8.0\Day02.csproj.CoreCompileInputs.cache
+D:\backend\Linq_iti\Day02\obj\Debug\net8.0\Day02.dll
+D:\backend\Linq_iti\Day02\obj\Debug\net8.0\refint\Day02.dll
+D:\backend\Linq_iti\Day02\obj\Debug\net8.0\Day02.pdb
+D:\backend\Linq_iti\Day02\obj\Debug\net8.0\Day02.genruntimeconfig.cache
+D:\backend\Linq_iti\Day02\obj\Debug\net8.0\ref\Day02.dll

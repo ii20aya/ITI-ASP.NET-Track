@@ -1,0 +1,189 @@
+@using ComplaintSystem.Models
+@using ComplaintSystem.Models.Enum
+@model List<Complaint>
+
+@{
+    ViewData["Title"] = "My Dashboard";
+    string userName  = ViewBag.UserName  ?? "User";
+    string userEmail = ViewBag.UserEmail ?? "";
+
+    int total      = Model.Count;
+    int pending    = Model.Count(c => c.Status == ComplaintStatus.Pending);
+    int inProgress = Model.Count(c => c.Status == ComplaintStatus.InProgress);
+    int resolved   = Model.Count(c => c.Status == ComplaintStatus.Resolved);
+    int rejected   = Model.Count(c => c.Status == ComplaintStatus.Rejected);
+}
+
+<div class="profile-hero">
+    <div class="d-flex align-items-center gap-3 mb-3" style="position:relative;z-index:1">
+        <div class="p-avatar">@userName[0].ToString().ToUpper()</div>
+        <div>
+            <div style="font-size:1.1rem;font-weight:700">@userName</div>
+            <div style="font-size:.78rem;opacity:.55">@userEmail</div>
+        </div>
+        <div class="ms-auto" style="position:relative;z-index:1">
+            <a asp-controller="Complaint" asp-action="Create"
+               class="btn btn-sm btn-caramel"
+               style="border-radius:50px;padding:.4rem 1.1rem">
+                <i class="bi bi-plus-circle me-1"></i>New Complaint
+            </a>
+        </div>
+    </div>
+
+    <div class="d-flex align-items-center gap-4" style="position:relative;z-index:1;flex-wrap:wrap">
+        <div>
+            <span class="p-stat-val">@total</span>
+            <span class="p-stat-lbl">Total</span>
+        </div>
+        <div class="p-sep"></div>
+        <div>
+            <span class="p-stat-val" style="color:#FCD34D">@pending</span>
+            <span class="p-stat-lbl">Pending</span>
+        </div>
+        <div class="p-sep"></div>
+        <div>
+            <span class="p-stat-val" style="color:#93C5FD">@inProgress</span>
+            <span class="p-stat-lbl">In Progress</span>
+        </div>
+        <div class="p-sep"></div>
+        <div>
+            <span class="p-stat-val" style="color:#6EE7B7">@resolved</span>
+            <span class="p-stat-lbl">Resolved</span>
+        </div>
+        @if (rejected > 0)
+        {
+            <div class="p-sep"></div>
+            <div>
+                <span class="p-stat-val" style="color:#FCA5A5">@rejected</span>
+                <span class="p-stat-lbl">Rejected</span>
+            </div>
+        }
+    </div>
+</div>
+
+<div class="d-flex align-items-center justify-content-between mb-3">
+    <div>
+        <h5 class="fw-800 mb-0 text-navy">My Complaints</h5>
+        <small class="text-muted">@Model.Count complaint(s)</small>
+    </div>
+    <a asp-controller="Complaint" asp-action="Index" class="btn btn-outline-secondary btn-sm">
+        <i class="bi bi-grid me-1"></i>View All
+    </a>
+</div>
+
+@if (!Model.Any())
+{
+    <div class="empty-state">
+        <div class="empty-icon"><i class="bi bi-inbox"></i></div>
+        <h5 class="text-navy fw-800">No complaints yet</h5>
+        <p class="mb-3">Submit a complaint to start tracking it here.</p>
+        <a asp-controller="Complaint" asp-action="Create" class="btn btn-primary px-4">
+            <i class="bi bi-plus-circle me-1"></i>File Your First Complaint
+        </a>
+    </div>
+}
+else
+{
+    <div class="row g-3">
+        @foreach (var c in Model)
+        {
+            string barCls;
+            string badgeCls;
+            string badgeLbl;
+
+            if (c.Status == ComplaintStatus.Pending)
+            {
+                barCls = "pending"; badgeCls = "badge-pending"; badgeLbl = "Pending";
+            }
+            else if (c.Status == ComplaintStatus.InProgress)
+            {
+                barCls = "inprogress"; badgeCls = "badge-inprogress"; badgeLbl = "In Progress";
+            }
+            else if (c.Status == ComplaintStatus.Resolved)
+            {
+                barCls = "resolved"; badgeCls = "badge-resolved"; badgeLbl = "Resolved";
+            }
+            else if (c.Status == ComplaintStatus.Rejected)
+            {
+                barCls = "rejected"; badgeCls = "badge-rejected"; badgeLbl = "Rejected";
+            }
+            else
+            {
+                barCls = "pending"; badgeCls = "badge-pending"; badgeLbl = "Unknown";
+            }
+
+            <div class="col-md-6 col-xl-4">
+                <div class="uc-card">
+                    <div class="uc-top-bar @barCls"></div>
+
+                    <div class="uc-header">
+                        <span class="badge-status @badgeCls">@badgeLbl</span>
+                        <small class="text-muted" style="font-size:.72rem;white-space:nowrap">
+                            <i class="bi bi-clock me-1"></i>@c.CreatedAt.ToString("dd MMM yyyy")
+                        </small>
+                    </div>
+
+                    <div class="uc-body">
+                        <div class="uc-title">@c.Title</div>
+                        <div class="uc-desc">@c.Description</div>
+
+                        @if (!string.IsNullOrEmpty(c.Category?.Name))
+                        {
+                            <div class="mb-2" style="font-size:.76rem;color:var(--text-muted)">
+                                <i class="bi bi-tag me-1"></i>@c.Category.Name
+                            </div>
+                        }
+
+                        @if (c.Replies.Any())
+                        {
+                            <div style="font-size:.78rem;font-weight:600;color:var(--navy);margin-bottom:.35rem">
+                                <i class="bi bi-chat-dots me-1"></i>@c.Replies.Count Reply(s)
+                            </div>
+                            @foreach (var r in c.Replies.OrderByDescending(r => r.CreatedAt).Take(2))
+                            {
+                                <div class="uc-reply-chip">
+                                    <div>@r.Content</div>
+                                    <div class="reply-meta">
+                                        <i class="bi bi-clock me-1"></i>
+                                        @r.CreatedAt.ToString("dd MMM yyyy, HH:mm")
+                                    </div>
+                                </div>
+                            }
+                            @if (c.Replies.Count > 2)
+                            {
+                                <small class="text-muted" style="font-size:.74rem">
+                                    +@(c.Replies.Count - 2) more
+                                </small>
+                            }
+                        }
+                        else
+                        {
+                            <small class="text-muted" style="font-size:.78rem;font-style:italic">
+                                No replies yet
+                            </small>
+                        }
+                    </div>
+
+                    <div class="uc-foot">
+                        <a asp-controller="Complaint" asp-action="Details" asp-route-id="@c.Id"
+                           class="btn btn-outline-primary btn-sm" style="font-size:.8rem">
+                            <i class="bi bi-eye me-1"></i>View
+                        </a>
+                        <div class="d-flex gap-1">
+                            <a asp-controller="Complaint" asp-action="Edit" asp-route-id="@c.Id"
+                               class="cmp-action-btn" title="Edit">
+                                <i class="bi bi-pencil"></i>
+                            </a>
+                            @* ── Live Chat button (same as admin) ── *@
+                            <a asp-controller="Complaint" asp-action="Chat" asp-route-id="@c.Id"
+                               class="cmp-action-btn" title="Live Chat"
+                               style="background:var(--navy);border-color:var(--navy);color:#fff">
+                                <i class="bi bi-chat-dots-fill"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+}

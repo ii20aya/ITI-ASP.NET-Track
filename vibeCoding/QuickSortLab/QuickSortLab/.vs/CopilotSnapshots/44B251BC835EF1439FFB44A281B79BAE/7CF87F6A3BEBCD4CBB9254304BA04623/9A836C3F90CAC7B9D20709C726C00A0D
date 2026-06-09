@@ -1,0 +1,123 @@
+﻿using System;
+
+namespace QuickSortApp.Algorithms
+{
+    /// <summary>
+    /// Additional sorting algorithms for comparison and benchmarking: MergeSort and HeapSort.
+    /// </summary>
+    public static class OtherSorters
+    {
+        /// <summary>
+        /// Sorts the array in-place using a stable Merge Sort algorithm.
+        /// </summary>
+        /// <param name="arr">Array to sort. Must not be null.</param>
+        /// <exception cref="ArgumentNullException">Thrown when <paramref name="arr"/> is null.</exception>
+        public static void MergeSort(int[] arr)
+        {
+            if (arr is null) throw new ArgumentNullException(nameof(arr));
+            if (arr.Length <= 1) return;
+
+            int[] aux = new int[arr.Length];
+            MergeSortImpl(arr, aux, 0, arr.Length - 1);
+        }
+
+        private static void MergeSortImpl(int[] arr, int[] aux, int left, int right)
+        {
+            if (left >= right) return;
+
+            int mid = left + ((right - left) >> 1);
+            MergeSortImpl(arr, aux, left, mid);
+            MergeSortImpl(arr, aux, mid + 1, right);
+            Merge(arr, aux, left, mid, right);
+        }
+
+        // Stable merge of two sorted runs: [left..mid] and [mid+1..right]
+        private static void Merge(int[] arr, int[] aux, int left, int mid, int right)
+        {
+            int i = left;
+            int j = mid + 1;
+            int k = left;
+
+            while (i <= mid && j <= right)
+            {
+                // use <= on left to preserve stability (left wins on equality)
+                if (arr[i] <= arr[j])
+                    aux[k++] = arr[i++];
+                else
+                    aux[k++] = arr[j++];
+            }
+
+            while (i <= mid) aux[k++] = arr[i++];
+            while (j <= right) aux[k++] = arr[j++];
+
+            // copy back
+            for (int idx = left; idx <= right; idx++) arr[idx] = aux[idx];
+        }
+
+        /// <summary>
+        /// Sorts the array in-place using Heap Sort (max-heap).
+        /// </summary>
+        /// <param name="arr">Array to sort. Must not be null.</param>
+        /// <exception cref="ArgumentNullException">Thrown when <paramref name="arr"/> is null.</exception>
+        public static void HeapSort(int[] arr)
+        {
+            if (arr is null) throw new ArgumentNullException(nameof(arr));
+            int n = arr.Length;
+            if (n <= 1) return;
+
+            // Build max-heap
+            for (int i = Parent(n - 1); i >= 0; i--)
+                SiftDown(arr, i, n - 1);
+
+            // Extract elements from heap
+            for (int end = n - 1; end > 0; end--)
+            {
+                Swap(arr, 0, end);
+                SiftDown(arr, 0, end - 1);
+            }
+        }
+
+        /// <summary>
+        /// Uses the CLR built-in Array.Sort for comparison/benchmarking.
+        /// This delegates to the highly-optimized runtime sort (Introspective Sort).
+        /// </summary>
+        /// <param name="arr">Array to sort. Must not be null.</param>
+        public static void BuiltInSort(int[] arr)
+        {
+            if (arr is null) throw new ArgumentNullException(nameof(arr));
+            Array.Sort(arr);
+        }
+
+        private static int Parent(int i) => (i - 1) >> 1;
+        private static int LeftChild(int i) => (i << 1) + 1;
+
+        private static void SiftDown(int[] arr, int start, int end)
+        {
+            int root = start;
+            while (true)
+            {
+                int child = LeftChild(root);
+                if (child > end) break;
+
+                int swap = root;
+
+                if (arr[swap] < arr[child]) swap = child;
+                int right = child + 1;
+                if (right <= end && arr[swap] < arr[right]) swap = right;
+
+                if (swap == root) return;
+
+                Swap(arr, root, swap);
+                root = swap;
+            }
+        }
+
+        private static void Swap(int[] arr, int i, int j)
+        {
+            if (i == j) return;
+            int t = arr[i];
+            arr[i] = arr[j];
+            arr[j] = t;
+        }
+    }
+}

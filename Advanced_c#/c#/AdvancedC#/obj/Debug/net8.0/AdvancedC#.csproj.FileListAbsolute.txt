@@ -1,0 +1,14 @@
+D:\backend\Day01\AdvancedC#\bin\Debug\net8.0\AdvancedC#.exe
+D:\backend\Day01\AdvancedC#\bin\Debug\net8.0\AdvancedC#.deps.json
+D:\backend\Day01\AdvancedC#\bin\Debug\net8.0\AdvancedC#.runtimeconfig.json
+D:\backend\Day01\AdvancedC#\bin\Debug\net8.0\AdvancedC#.dll
+D:\backend\Day01\AdvancedC#\bin\Debug\net8.0\AdvancedC#.pdb
+D:\backend\Day01\AdvancedC#\obj\Debug\net8.0\AdvancedC#.GeneratedMSBuildEditorConfig.editorconfig
+D:\backend\Day01\AdvancedC#\obj\Debug\net8.0\AdvancedC#.AssemblyInfoInputs.cache
+D:\backend\Day01\AdvancedC#\obj\Debug\net8.0\AdvancedC#.AssemblyInfo.cs
+D:\backend\Day01\AdvancedC#\obj\Debug\net8.0\AdvancedC#.csproj.CoreCompileInputs.cache
+D:\backend\Day01\AdvancedC#\obj\Debug\net8.0\AdvancedC#.dll
+D:\backend\Day01\AdvancedC#\obj\Debug\net8.0\refint\AdvancedC#.dll
+D:\backend\Day01\AdvancedC#\obj\Debug\net8.0\AdvancedC#.pdb
+D:\backend\Day01\AdvancedC#\obj\Debug\net8.0\AdvancedC#.genruntimeconfig.cache
+D:\backend\Day01\AdvancedC#\obj\Debug\net8.0\ref\AdvancedC#.dll

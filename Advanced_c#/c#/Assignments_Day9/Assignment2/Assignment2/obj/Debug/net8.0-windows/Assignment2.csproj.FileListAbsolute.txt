@@ -1,0 +1,14 @@
+D:\Assignments_Day9\Assignment2\Assignment2\bin\Debug\net8.0-windows\Assignment2.exe
+D:\Assignments_Day9\Assignment2\Assignment2\bin\Debug\net8.0-windows\Assignment2.deps.json
+D:\Assignments_Day9\Assignment2\Assignment2\bin\Debug\net8.0-windows\Assignment2.runtimeconfig.json
+D:\Assignments_Day9\Assignment2\Assignment2\bin\Debug\net8.0-windows\Assignment2.dll
+D:\Assignments_Day9\Assignment2\Assignment2\bin\Debug\net8.0-windows\Assignment2.pdb
+D:\Assignments_Day9\Assignment2\Assignment2\obj\Debug\net8.0-windows\Assignment2.GeneratedMSBuildEditorConfig.editorconfig
+D:\Assignments_Day9\Assignment2\Assignment2\obj\Debug\net8.0-windows\Assignment2.AssemblyInfoInputs.cache
+D:\Assignments_Day9\Assignment2\Assignment2\obj\Debug\net8.0-windows\Assignment2.AssemblyInfo.cs
+D:\Assignments_Day9\Assignment2\Assignment2\obj\Debug\net8.0-windows\Assignment2.csproj.CoreCompileInputs.cache
+D:\Assignments_Day9\Assignment2\Assignment2\obj\Debug\net8.0-windows\Assignment2.dll
+D:\Assignments_Day9\Assignment2\Assignment2\obj\Debug\net8.0-windows\refint\Assignment2.dll
+D:\Assignments_Day9\Assignment2\Assignment2\obj\Debug\net8.0-windows\Assignment2.pdb
+D:\Assignments_Day9\Assignment2\Assignment2\obj\Debug\net8.0-windows\Assignment2.genruntimeconfig.cache
+D:\Assignments_Day9\Assignment2\Assignment2\obj\Debug\net8.0-windows\ref\Assignment2.dll

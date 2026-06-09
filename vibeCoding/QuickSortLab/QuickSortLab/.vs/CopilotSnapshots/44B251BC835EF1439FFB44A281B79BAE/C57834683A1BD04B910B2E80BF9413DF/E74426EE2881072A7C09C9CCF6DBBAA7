@@ -1,0 +1,221 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Diagnostics;
+
+namespace QuickSortApp.Algorithms
+{
+    /// <summary>
+    /// QuickSort Algorithm Implementation
+    /// Provides both Recursive and Iterative versions with benchmarking support.
+    ///
+    /// HOW QUICKSORT WORKS:
+    /// 1. Pick a "pivot" element from the array.
+    /// 2. Partition: move elements smaller than pivot to left, larger to right.
+    /// 3. Recursively apply the same process to both sub-arrays.
+    /// 4. Base case: arrays of size 0 or 1 are already sorted.
+    ///
+    /// TIME COMPLEXITY:
+    ///   Best Case:    O(n log n) - pivot always divides array in half
+    ///   Average Case: O(n log n) - random pivot
+    ///   Worst Case:   O(n²)     - already sorted array with first element as pivot
+    ///
+    /// SPACE COMPLEXITY:
+    ///   Recursive: O(log n) average (call stack)
+    ///   Iterative: O(log n) explicit stack
+    /// </summary>
+    public static class QuickSort
+    {
+        private const int INSERTION_SORT_THRESHOLD = 16; // tuning parameter
+
+        // ─────────────────────────────────────────────────────────
+        //  RECURSIVE VERSION (improved)
+        // ─────────────────────────────────────────────────────────
+
+        /// <summary>
+        /// Public entry point for recursive QuickSort.
+        /// </summary>
+        /// <param name="arr">Array to sort in-place.</param>
+        /// <exception cref="ArgumentNullException">When <paramref name="arr"/> is null.</exception>
+        public static void RecursiveSort(int[] arr)
+        {
+            if (arr == null) throw new ArgumentNullException(nameof(arr));
+            if (arr.Length <= 1) return;
+
+            RecursiveSort(arr, 0, arr.Length - 1);
+        }
+
+        /// <summary>
+        /// Internal recursive QuickSort with two optimizations:
+        /// 1) Use insertion sort for small partitions (faster for small n).
+        /// 2) Eliminate tail recursion by always recursing on the smaller partition
+        ///    and iterating on the larger, bounding call stack depth to O(log n).
+        /// </summary>
+        private static void RecursiveSort(int[] arr, int low, int high)
+        {
+            while (low < high)
+            {
+                int size = high - low + 1;
+
+                // Use insertion sort for small partitions — much faster in practice
+                if (size <= INSERTION_SORT_THRESHOLD)
+                {
+                    InsertionSort(arr, low, high);
+                    break;
+                }
+
+                int pi = Partition(arr, low, high);
+
+                // Recurse on the smaller partition first to limit recursion depth
+                if (pi - 1 - low < high - (pi + 1))
+                {
+                    // left is smaller
+                    RecursiveSort(arr, low, pi - 1);
+                    low = pi + 1; // tail-recurse on right (converted to loop)
+                }
+                else
+                {
+                    // right is smaller
+                    RecursiveSort(arr, pi + 1, high);
+                    high = pi - 1; // tail-recurse on left (converted to loop)
+                }
+            }
+        }
+
+        /// <summary>
+        /// Simple insertion sort for small ranges.
+        /// </summary>
+        private static void InsertionSort(int[] arr, int low, int high)
+        {
+            for (int i = low + 1; i <= high; i++)
+            {
+                int key = arr[i];
+                int j = i - 1;
+                while (j >= low && arr[j] > key)
+                {
+                    arr[j + 1] = arr[j];
+                    j--;
+                }
+                arr[j + 1] = key;
+            }
+        }
+
+        // ─────────────────────────────────────────────────────────
+        //  ITERATIVE VERSION (avoids stack-overflow on large arrays)
+        // ─────────────────────────────────────────────────────────
+
+        /// <summary>
+        /// Iterative QuickSort using an explicit stack.
+        /// Eliminates recursion depth limitations.
+        /// </summary>
+        /// <param name="arr">Array to sort in-place.</param>
+        /// <exception cref="ArgumentNullException">When <paramref name="arr"/> is null.</exception>
+        public static void IterativeSort(int[] arr)
+        {
+            if (arr == null) throw new ArgumentNullException(nameof(arr));
+            if (arr.Length <= 1) return;
+
+            int n = arr.Length;
+            Stack<int> stack = new Stack<int>();
+
+            // Push initial low and high
+            stack.Push(0);
+            stack.Push(n - 1);
+
+            while (stack.Count > 0)
+            {
+                int high = stack.Pop();
+                int low = stack.Pop();
+
+                if (low < high)
+                {
+                    int pi = Partition(arr, low, high);
+
+                    // Push left sub-array bounds
+                    if (pi - 1 > low)
+                    {
+                        stack.Push(low);
+                        stack.Push(pi - 1);
+                    }
+
+                    // Push right sub-array bounds
+                    if (pi + 1 < high)
+                    {
+                        stack.Push(pi + 1);
+                        stack.Push(high);
+                    }
+                }
+            }
+        }
+
+        // ─────────────────────────────────────────────────────────
+        //  PARTITION (shared by both versions)
+        // ─────────────────────────────────────────────────────────
+
+        /// <summary>
+        /// Lomuto Partition Scheme.
+        /// Chooses pivot via median-of-three and places it at <c>high</c>.
+        /// Moves all smaller elements to the left of pivot.
+        /// Returns the final index of the pivot.
+        /// </summary>
+        private static int Partition(int[] arr, int low, int high)
+        {
+            // Use median-of-three to pick a better pivot (optimization)
+            int mid = low + (high - low) / 2;
+            MedianOfThree(arr, low, mid, high);
+
+            int pivot = arr[high];
+            int i = low - 1; // index of smaller element
+
+            for (int j = low; j < high; j++)
+            {
+                if (arr[j] <= pivot)
+                {
+                    i++;
+                    Swap(ref arr[i], ref arr[j]);
+                }
+            }
+
+            Swap(ref arr[i + 1], ref arr[high]);
+            return i + 1;
+        }
+
+        /// <summary>
+        /// Median-of-Three optimization: pick median of arr[low], arr[mid], arr[high]
+        /// and place it at arr[high] so Partition uses it as pivot.
+        /// </summary>
+        private static void MedianOfThree(int[] arr, int low, int mid, int high)
+        {
+            if (arr[low] > arr[mid]) Swap(ref arr[low], ref arr[mid]);
+            if (arr[low] > arr[high]) Swap(ref arr[low], ref arr[high]);
+            if (arr[mid] > arr[high]) Swap(ref arr[mid], ref arr[high]);
+            // arr[mid] is now the median → move it to high as pivot
+            Swap(ref arr[mid], ref arr[high]);
+        }
+
+        private static void Swap(ref int a, ref int b)
+        {
+            int temp = a;
+            a = b;
+            b = temp;
+        }
+
+        // ─────────────────────────────────────────────────────────
+        //  BENCHMARKING
+        // ─────────────────────────────────────────────────────────
+
+        /// <summary>
+        /// Measures execution time of any sort action in milliseconds.
+        /// </summary>
+        /// <param name="sortAction">Action to execute and time.</param>
+        /// <returns>Elapsed milliseconds as double.</returns>
+        /// <exception cref="ArgumentNullException">When <paramref name="sortAction"/> is null.</exception>
+        public static double Benchmark(Action sortAction)
+        {
+            if (sortAction == null) throw new ArgumentNullException(nameof(sortAction));
+            var sw = Stopwatch.StartNew();
+            sortAction();
+            sw.Stop();
+            return sw.Elapsed.TotalMilliseconds;
+        }
+    }
+}

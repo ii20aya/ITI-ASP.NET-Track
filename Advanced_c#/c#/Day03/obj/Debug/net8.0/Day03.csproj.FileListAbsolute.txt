@@ -1,0 +1,15 @@
+D:\backend\Day01\Day03\bin\Debug\net8.0\Day03.exe
+D:\backend\Day01\Day03\bin\Debug\net8.0\Day03.deps.json
+D:\backend\Day01\Day03\bin\Debug\net8.0\Day03.runtimeconfig.json
+D:\backend\Day01\Day03\bin\Debug\net8.0\Day03.dll
+D:\backend\Day01\Day03\bin\Debug\net8.0\Day03.pdb
+D:\backend\Day01\Day03\bin\Debug\net8.0\Day03.xml
+D:\backend\Day01\Day03\obj\Debug\net8.0\Day03.GeneratedMSBuildEditorConfig.editorconfig
+D:\backend\Day01\Day03\obj\Debug\net8.0\Day03.AssemblyInfoInputs.cache
+D:\backend\Day01\Day03\obj\Debug\net8.0\Day03.AssemblyInfo.cs
+D:\backend\Day01\Day03\obj\Debug\net8.0\Day03.csproj.CoreCompileInputs.cache
+D:\backend\Day01\Day03\obj\Debug\net8.0\Day03.dll
+D:\backend\Day01\Day03\obj\Debug\net8.0\refint\Day03.dll
+D:\backend\Day01\Day03\obj\Debug\net8.0\Day03.pdb
+D:\backend\Day01\Day03\obj\Debug\net8.0\Day03.genruntimeconfig.cache
+D:\backend\Day01\Day03\obj\Debug\net8.0\ref\Day03.dll
