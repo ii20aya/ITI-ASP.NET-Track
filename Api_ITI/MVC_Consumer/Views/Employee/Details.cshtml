@@ -1,0 +1,26 @@
+﻿@model MVC_Consumer.Models.EmployeeDTO
+
+<h2>Employee Details</h2>
+
+<dl class="row">
+    <dt class="col-sm-3">Full Name</dt>
+    <dd class="col-sm-9">@Model.FullName</dd>
+
+    <dt class="col-sm-3">Phone</dt>
+    <dd class="col-sm-9">@Model.PhoneNumber</dd>
+
+    <dt class="col-sm-3">Salary</dt>
+    <dd class="col-sm-9">@Model.Salary</dd>
+
+    <dt class="col-sm-3">Position</dt>
+    <dd class="col-sm-9">@Model.Position</dd>
+
+    <dt class="col-sm-3">Department</dt>
+    <dd class="col-sm-9">@Model.Department</dd>
+
+    <dt class="col-sm-3">Project</dt>
+    <dd class="col-sm-9">@Model.ProjectName</dd>
+</dl>
+
+<a href="/Employee/Index" class="btn btn-secondary">Back</a>
+<a href="/Employee/Edit/@Model.Id" class="btn btn-warning">Edit</a>

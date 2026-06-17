@@ -1,0 +1,32 @@
+﻿@model MVC_Consumer.Models.EmployeeCreateDTO
+
+<h2>Add New Employee</h2>
+
+<form method="post" action="/Employee/Create">
+    <div class="mb-3">
+        <label>Full Name</label>
+        <input name="FullName" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label>Phone</label>
+        <input name="PhoneNumber" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label>Salary</label>
+        <input name="Salary" type="number" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label>Position</label>
+        <input name="Position" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label>Department</label>
+        <input name="Department" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label>Project ID</label>
+        <input name="ProjectId" type="number" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-success">Save</button>
+    <a href="/Employee/Index" class="btn btn-secondary">Cancel</a>
+</form>

@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "Api_ITI\\Api_ITI.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "MVC_Consumer\\MVC_Consumer.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

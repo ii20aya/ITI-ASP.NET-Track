@@ -1,0 +1,32 @@
+﻿@model MVC_Consumer.Models.EmployeeCreateDTO
+
+<h2>Edit Employee</h2>
+
+<form method="post" action="/Employee/Edit/@ViewBag.Id">
+    <div class="mb-3">
+        <label>Full Name</label>
+        <input name="FullName" value="@Model.FullName" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label>Phone</label>
+        <input name="PhoneNumber" value="@Model.PhoneNumber" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label>Salary</label>
+        <input name="Salary" type="number" value="@Model.Salary" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label>Position</label>
+        <input name="Position" value="@Model.Position" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label>Department</label>
+        <input name="Department" value="@Model.Department" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label>Project ID</label>
+        <input name="ProjectId" type="number" value="@Model.ProjectId" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-warning">Update</button>
+    <a href="/Employee/Index" class="btn btn-secondary">Cancel</a>
+</form>

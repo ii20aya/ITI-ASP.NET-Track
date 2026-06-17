@@ -1,0 +1,36 @@
+﻿@model List<MVC_Consumer.Models.EmployeeDTO>
+
+<h2>Employees</h2>
+<a href="/Employee/Create" class="btn btn-primary mb-3">Add New Employee</a>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Phone</th>
+            <th>Salary</th>
+            <th>Position</th>
+            <th>Department</th>
+            <th>Project</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var emp in Model)
+        {
+            <tr>
+                <td>@emp.FullName</td>
+                <td>@emp.PhoneNumber</td>
+                <td>@emp.Salary</td>
+                <td>@emp.Position</td>
+                <td>@emp.Department</td>
+                <td>@emp.ProjectName</td>
+                <td>
+                    <a href="/Employee/Details/@emp.Id" class="btn btn-info btn-sm">Details</a>
+                    <a href="/Employee/Edit/@emp.Id" class="btn btn-warning btn-sm">Edit</a>
+                    <a href="/Employee/Delete/@emp.Id" class="btn btn-danger btn-sm">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
